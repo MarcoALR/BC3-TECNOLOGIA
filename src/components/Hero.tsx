@@ -1,0 +1,178 @@
+import { motion } from "framer-motion";
+import { ArrowRight, Play, BarChart3, Cog, Shield } from "lucide-react";
+import heroVideo from "@/assets/hero-bg.mp4";
+import iconeBc3 from "@/assets/iconebc3.png";
+
+const Hero = () => {
+  const features = [
+    { icon: BarChart3, text: "Gestão Integrada" },
+    { icon: Cog, text: "Automação Industrial" },
+    { icon: Shield, text: "Dados Confiáveis" },
+  ];
+
+  return (
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+    >
+      {/* Video Background */}
+      <div className="absolute inset-0 z-0">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src={heroVideo} type="video/mp4" />
+        </video>
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-bc3-industrial/95 via-bc3-industrial/90 to-bc3-gray-dark/95" />
+      </div>
+
+      {/* Particles */}
+      <div className="particles-bg" />
+
+      {/* Grid Lines */}
+      <div className="absolute inset-0 grid-lines opacity-30" />
+
+      {/* Content */}
+      <div className="container mx-auto px-4 lg:px-8 relative z-10 pt-24">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          {/* Text Content */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="text-center lg:text-left"
+          >
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/10 mb-6"
+            >
+              <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+              <span className="text-sm font-medium text-primary">
+                ERP Especializado para Indústria
+              </span>
+            </motion.div>
+
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-secondary-foreground leading-tight mb-6">
+              Transforme sua{" "}
+              <span className="text-gradient-gold">Indústria</span> com o{" "}
+              <span className="text-gradient-gold">ERP KRP</span>
+            </h1>
+
+            <p className="text-lg md:text-xl text-secondary-foreground/70 mb-8 max-w-xl mx-auto lg:mx-0">
+              Sistema completo e integrado para indústrias de cartonagem e papelão ondulado.
+              Unificamos vendas, compras, produção, financeiro e fiscal em um único ambiente.
+            </p>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
+              <a
+                href="https://wa.me/5532999851183?text=Olá! Gostaria de conhecer o ERP KRP."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-hero-primary"
+              >
+                Solicitar Demonstração
+                <ArrowRight className="w-5 h-5" />
+              </a>
+              <a
+                href="https://www.youtube.com/@BC3Tecnologia"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-hero-secondary"
+              >
+                <Play className="w-5 h-5" />
+                Ver no YouTube
+              </a>
+            </div>
+
+            {/* Feature Pills */}
+            <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
+              {features.map((feature, index) => (
+                <motion.div
+                  key={feature.text}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
+                  className="flex items-center gap-2 px-4 py-2 bg-secondary/50 rounded-lg border border-secondary-foreground/10"
+                >
+                  <feature.icon className="w-4 h-4 text-primary" />
+                  <span className="text-sm font-medium text-secondary-foreground/80">
+                    {feature.text}
+                  </span>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Hero Image/Icon */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, delay: 0.4 }}
+            className="hidden lg:flex items-center justify-center"
+          >
+            <div className="relative">
+              {/* Glow Effect */}
+              <div className="absolute inset-0 blur-3xl bg-primary/20 rounded-full scale-150" />
+              
+              {/* Main Icon */}
+              <motion.img
+                src={iconeBc3}
+                alt="BC3 Tecnologia"
+                className="relative w-80 h-80 object-contain drop-shadow-2xl"
+                animate={{
+                  y: [0, -15, 0],
+                }}
+                transition={{
+                  duration: 4,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+              />
+
+              {/* Floating Elements */}
+              <motion.div
+                className="absolute -top-8 -right-8 p-4 bg-card/90 backdrop-blur-sm rounded-xl shadow-strong border border-border"
+                animate={{ y: [0, -10, 0], rotate: [0, 5, 0] }}
+                transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+              >
+                <BarChart3 className="w-8 h-8 text-primary" />
+              </motion.div>
+
+              <motion.div
+                className="absolute -bottom-4 -left-8 p-4 bg-card/90 backdrop-blur-sm rounded-xl shadow-strong border border-border"
+                animate={{ y: [0, 10, 0], rotate: [0, -5, 0] }}
+                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+              >
+                <Cog className="w-8 h-8 text-primary" />
+              </motion.div>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+
+      {/* Scroll Indicator */}
+      <motion.div
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10"
+        animate={{ y: [0, 10, 0] }}
+        transition={{ duration: 2, repeat: Infinity }}
+      >
+        <div className="w-6 h-10 rounded-full border-2 border-secondary-foreground/30 flex items-start justify-center p-2">
+          <motion.div
+            className="w-1.5 h-3 rounded-full bg-primary"
+            animate={{ y: [0, 12, 0] }}
+            transition={{ duration: 2, repeat: Infinity }}
+          />
+        </div>
+      </motion.div>
+    </section>
+  );
+};
+
+export default Hero;

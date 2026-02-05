@@ -2,95 +2,110 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* ============================================
+   BC3 TECNOLOGIA - Design System
+   Cores: Amarelo/Dourado + Cinza Escuro
+   Estilo: Industrial, Corporativo, Moderno
+============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap');
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* === Cores Principais BC3 === */
+    --background: 220 20% 97%;
+    --foreground: 220 20% 10%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 220 20% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 220 20% 10%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Amarelo/Dourado BC3 */
+    --primary: 43 90% 55%;
+    --primary-foreground: 220 20% 10%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Cinza Escuro */
+    --secondary: 220 15% 20%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 220 15% 92%;
+    --muted-foreground: 220 10% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 43 85% 50%;
+    --accent-foreground: 220 20% 10%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 220 15% 88%;
+    --input: 220 15% 88%;
+    --ring: 43 90% 55%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
-    --sidebar-background: 0 0% 98%;
+    /* === Cores Customizadas BC3 === */
+    --bc3-gold: 43 90% 55%;
+    --bc3-gold-light: 43 85% 65%;
+    --bc3-gold-dark: 40 95% 45%;
+    --bc3-gray-dark: 220 15% 15%;
+    --bc3-gray-medium: 220 12% 35%;
+    --bc3-gray-light: 220 15% 75%;
+    --bc3-industrial: 215 25% 12%;
+    --bc3-steel: 220 10% 25%;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
+    /* === Gradientes === */
+    --gradient-hero: linear-gradient(135deg, hsl(220 15% 12%) 0%, hsl(220 20% 8%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(43 90% 55%) 0%, hsl(35 95% 50%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(220 20% 97%) 100%);
+    --gradient-dark: linear-gradient(180deg, hsl(220 15% 15%) 0%, hsl(220 20% 8%) 100%);
 
-    --sidebar-primary: 240 5.9% 10%;
+    /* === Sombras === */
+    --shadow-soft: 0 4px 20px -4px hsl(220 20% 10% / 0.1);
+    --shadow-medium: 0 8px 30px -8px hsl(220 20% 10% / 0.15);
+    --shadow-strong: 0 16px 50px -12px hsl(220 20% 10% / 0.25);
+    --shadow-gold: 0 8px 30px -8px hsl(43 90% 55% / 0.3);
 
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Sidebar */
+    --sidebar-background: 220 15% 15%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 43 90% 55%;
+    --sidebar-primary-foreground: 220 20% 10%;
+    --sidebar-accent: 220 15% 20%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 220 15% 25%;
+    --sidebar-ring: 43 90% 55%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 220 20% 8%;
+    --foreground: 0 0% 95%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 220 15% 12%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 220 15% 12%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 43 90% 55%;
+    --primary-foreground: 220 20% 10%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 220 15% 20%;
+    --secondary-foreground: 0 0% 95%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 220 15% 18%;
+    --muted-foreground: 220 10% 60%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 43 85% 50%;
+    --accent-foreground: 220 20% 10%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 95%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
+    --ring: 43 90% 55%;
   }
 }
 
@@ -99,7 +114,174 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  /* === Botões Hero === */
+  .btn-hero-primary {
+    @apply inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold rounded-lg transition-all duration-300;
+    background: linear-gradient(135deg, hsl(var(--bc3-gold)) 0%, hsl(var(--bc3-gold-dark)) 100%);
+    color: hsl(var(--bc3-industrial));
+    box-shadow: var(--shadow-gold);
+  }
+
+  .btn-hero-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px -8px hsl(43 90% 55% / 0.4);
+  }
+
+  .btn-hero-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold rounded-lg transition-all duration-300;
+    background: transparent;
+    color: hsl(0 0% 95%);
+    border: 2px solid hsl(0 0% 95% / 0.3);
+  }
+
+  .btn-hero-secondary:hover {
+    border-color: hsl(var(--bc3-gold));
+    color: hsl(var(--bc3-gold));
+    background: hsl(var(--bc3-gold) / 0.1);
+  }
+
+  /* === Cards === */
+  .card-module {
+    @apply relative overflow-hidden rounded-2xl p-6 transition-all duration-500;
+    background: hsl(var(--card));
+    box-shadow: var(--shadow-soft);
+    border: 1px solid hsl(var(--border));
+  }
+
+  .card-module:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-strong);
+    border-color: hsl(var(--bc3-gold) / 0.3);
+  }
+
+  .card-module::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, hsl(var(--bc3-gold)) 0%, hsl(var(--bc3-gold-dark)) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .card-module:hover::before {
+    opacity: 1;
+  }
+
+  /* === Seção Dark === */
+  .section-dark {
+    background: var(--gradient-dark);
+    color: hsl(0 0% 95%);
+  }
+
+  /* === Texto Gradiente === */
+  .text-gradient-gold {
+    background: linear-gradient(135deg, hsl(var(--bc3-gold)) 0%, hsl(var(--bc3-gold-light)) 50%, hsl(var(--bc3-gold)) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* === Animação de Partículas === */
+  .particles-bg {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    z-index: 0;
+  }
+
+  .particles-bg::before {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, hsl(var(--bc3-gold) / 0.15) 0%, transparent 70%);
+    top: 20%;
+    left: 10%;
+    animation: float 15s infinite ease-in-out;
+  }
+
+  .particles-bg::after {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, hsl(var(--bc3-gold) / 0.1) 0%, transparent 70%);
+    bottom: 10%;
+    right: 5%;
+    animation: float 20s infinite ease-in-out reverse;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translate(0, 0) scale(1);
+    }
+    33% {
+      transform: translate(30px, -30px) scale(1.1);
+    }
+    66% {
+      transform: translate(-20px, 20px) scale(0.9);
+    }
+  }
+
+  /* === Grid Lines Background === */
+  .grid-lines {
+    background-image: 
+      linear-gradient(hsl(var(--bc3-gold) / 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--bc3-gold) / 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+
+  /* === Navbar Glass === */
+  .navbar-glass {
+    backdrop-filter: blur(20px);
+    background: hsl(var(--bc3-industrial) / 0.9);
+    border-bottom: 1px solid hsl(0 0% 100% / 0.1);
+  }
+
+  /* === Glow Effect === */
+  .glow-gold {
+    box-shadow: 0 0 40px hsl(var(--bc3-gold) / 0.3);
+  }
+
+  /* === Marquee Animation === */
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee 30s linear infinite;
+  }
+
+  .animate-marquee:hover {
+    animation-play-state: paused;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
   }
 }

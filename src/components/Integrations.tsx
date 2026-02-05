@@ -21,7 +21,7 @@ const Integrations = () => {
         "Tomada de Decisão Inteligente",
       ],
       // TODO: Inserir logo do Zoho Analytics aqui
-      // <img src="/images/integracoes/zoho-analytics.png" alt="Zoho Analytics" />
+      <img src="/public/logos/zoho.jpeg" alt="Zoho Analytics" />
       logoPlaceholder: "Logo Zoho Analytics",
       icon: BarChart3,
       highlight: true,
@@ -39,7 +39,7 @@ const Integrations = () => {
         "Eficiência Operacional",
       ],
       // TODO: Inserir logo do Bling aqui
-      // <img src="/images/integracoes/bling.png" alt="Bling" />
+       <img src="/public/logos/bling.jpeg" alt="Bling" />
       logoPlaceholder: "Logo Bling",
       icon: ShoppingBag,
       highlight: false,

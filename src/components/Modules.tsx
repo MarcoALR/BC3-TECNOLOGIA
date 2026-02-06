@@ -19,35 +19,82 @@ const Modules = () => {
     return () => window.removeEventListener('changeModule', handleChange);
   }, []);
 
-  // Preload all module images on mount
-  useEffect(() => {
-    modules.forEach((m) => {
-      if (m.image) {
-        const img = new Image();
-        img.src = m.image;
-      }
-    });
-  }, []);
+  // Removi o useEffect de pre-load de imagem pois agora são vídeos.
+  // O browser gerencia o buffer do vídeo automaticamente.
 
   const modules = [
-    { id: "comercial", icon: ShoppingCart, title: "Comercial", description: "Gestão completa do ciclo de vendas: orçamentos, pedidos, faturamento e acompanhamento de clientes. Controle de comissões e metas da equipe comercial.", features: ["Orçamentos e Pedidos", "Emissão de NF-e | Formulário Próprio", "Gestão de Clientes", "Comissões e Metas"], image: "/modulos/comercial.jpeg" },
-
-
-    { id: "compras", icon: Package, title: "Compras", description: "Controle de requisições, cotações, pedidos de compra e recebimento de materiais. Gestão de fornecedores e análise de custos.", features: ["Requisições de Compra", "Entradas de NF | NFD | CT-e", "Controle de Recebimento", "Gestão de Fornecedores"], image: "/modulos/compras.jpeg" },
-
-    { id: "producao", icon: Factory, title: "Produção", description: "Planejamento e controle da produção, ordens de fabricação, apontamentos e rastreabilidade completa do processo produtivo industrial.", features: ["Ordens de Produção", "Apontamento de Produção", "PCP Integrado", "Fluxo por Máquina"], image: "/modulos/producao.jpeg" },
-
-    { id: "financeiro", icon: DollarSign, title: "Financeiro", description: "Contas a pagar, contas a receber, fluxo de caixa, conciliação bancária e gestão completa das finanças da empresa.", features: ["Contas a Pagar/Receber", "Fluxo de Caixa", "Conciliação Bancária", "Relatórios Financeiros"], image: "/modulos/financeiro.jpeg" },
-
-    { id: "fiscal", icon: FileText, title: "Fiscal", description: "Emissão do sintegra. Escrituração fiscal completa e atualização constante da legislação.", features: ["Relatório do inventário | SN", "Escrituração Fiscal", "Apuração de Impostos", "Atualizações Legais"], image: "/modulos/fiscal.jpeg" },
-
-    { id: "bc3docs", icon: FileCheck, title: "BC3Docs", description: "Automação fiscal inteligente: captura automática de documentos, validação de XMLs e integração com sistemas fiscais.", features: ["Captura de XMLs", "Validação Automática", "Manifestação de Destinatário", "Arquivo Centralizado"], image: "/modulos/docs.jpeg" },
-
-    { id: "mdfe", icon: Truck, title: "MDF-e", description: "Emissão e gestão de Manifesto Eletrônico de Documentos Fiscais para operações de transporte interestadual e intermunicipal.", features: ["Emissão MDF-e", "Encerramento Automático", "Integração Logística", "Controle de Viagens"], image: "/modulos/mdfe.jpeg" },
-
-    { id: "sped", icon: Database, title: "SPED", description: "Geração automatizada de todos os arquivos SPED: EFD ICMS/IPI, EFD Contribuições, ECD, ECF e Bloco K.", features: ["EFD ICMS/IPI", "EFD Contribuições", "Bloco K", "Validação Prévia"], image: "/modulos/sped.jpeg" },
-
-    { id: "report", icon: BarChart3, title: "Report", description: "Relatórios gerenciais, dashboards e indicadores de desempenho para tomada de decisão baseada em dados confiáveis.", features: ["Dashboards Gerenciais", "Indicadores KPI", "Relatórios Customizados", "Exportação de Dados"], image: "/modulos/report.jpeg" },
+    { 
+      id: "comercial", 
+      icon: ShoppingCart, 
+      title: "Comercial", 
+      description: "Gestão completa do ciclo de vendas: orçamentos, pedidos, faturamento e acompanhamento de clientes. Controle de comissões e metas da equipe comercial.", 
+      features: ["Orçamentos e Pedidos", "Emissão de NF-e | Formulário Próprio", "Gestão de Clientes", "Comissões e Metas"], 
+      video: "/modulos/comercial.mp4" // Alterado para vídeo
+    },
+    { 
+      id: "compras", 
+      icon: Package, 
+      title: "Compras", 
+      description: "Controle de requisições, cotações, pedidos de compra e recebimento de materiais. Gestão de fornecedores e análise de custos.", 
+      features: ["Requisições de Compra", "Entradas de NF | NFD | CT-e", "Controle de Recebimento", "Gestão de Fornecedores"], 
+      video: "/modulos/compras.mp4" 
+    },
+    { 
+      id: "producao", 
+      icon: Factory, 
+      title: "Produção", 
+      description: "Planejamento e controle da produção, ordens de fabricação, apontamentos e rastreabilidade completa do processo produtivo industrial.", 
+      features: ["Ordens de Produção", "Apontamento de Produção", "PCP Integrado", "Fluxo por Máquina"], 
+      video: "/modulos/producao.mp4" 
+    },
+    { 
+      id: "financeiro", 
+      icon: DollarSign, 
+      title: "Financeiro", 
+      description: "Contas a pagar, contas a receber, fluxo de caixa, conciliação bancária e gestão completa das finanças da empresa.", 
+      features: ["Contas a Pagar/Receber", "Fluxo de Caixa", "Conciliação Bancária", "Relatórios Financeiros"], 
+      video: "/modulos/financeiro.mp4" 
+    },
+    { 
+      id: "fiscal", 
+      icon: FileText, 
+      title: "Fiscal", 
+      description: "Emissão do sintegra. Escrituração fiscal completa e atualização constante da legislação.", 
+      features: ["Relatório do inventário | SN", "Escrituração Fiscal", "Apuração de Impostos", "Atualizações Legais"], 
+      video: "/modulos/fiscal.mp4" 
+    },
+    { 
+      id: "bc3docs", 
+      icon: FileCheck, 
+      title: "BC3Docs", 
+      description: "Automação fiscal inteligente: captura automática de documentos, validação de XMLs e integração com sistemas fiscais.", 
+      features: ["Captura de XMLs", "Validação Automática", "Manifestação de Destinatário", "Arquivo Centralizado"], 
+      video: "/modulos/docs.mp4" 
+    },
+    { 
+      id: "mdfe", 
+      icon: Truck, 
+      title: "MDF-e", 
+      description: "Emissão e gestão de Manifesto Eletrônico de Documentos Fiscais para operações de transporte interestadual e intermunicipal.", 
+      features: ["Emissão MDF-e", "Encerramento Automático", "Integração Logística", "Controle de Viagens"], 
+      video: "/modulos/mdfe.mp4" 
+    },
+    { 
+      id: "sped", 
+      icon: Database, 
+      title: "SPED", 
+      description: "Geração automatizada de todos os arquivos SPED: EFD ICMS/IPI, EFD Contribuições, ECD, ECF e Bloco K.", 
+      features: ["EFD ICMS/IPI", "EFD Contribuições", "Bloco K", "Validação Prévia"], 
+      video: "/modulos/sped.mp4" 
+    },
+    { 
+      id: "report", 
+      icon: BarChart3, 
+      title: "Report", 
+      description: "Relatórios gerenciais, dashboards e indicadores de desempenho para tomada de decisão baseada em dados confiáveis.", 
+      features: ["Dashboards Gerenciais", "Indicadores KPI", "Relatórios Customizados", "Exportação de Dados"], 
+      video: "/modulos/report.mp4" 
+    },
   ];
 
   const currentModule = modules[activeModule];
@@ -111,11 +158,14 @@ const Modules = () => {
               >
                 <div className="bg-card/10 backdrop-blur-sm rounded-2xl border border-secondary-foreground/10 overflow-hidden">
                   <div className="aspect-video bg-secondary/30 relative overflow-hidden">
-                    <img
-                      src={currentModule.image}
-                      alt={`Módulo ${currentModule.title}`}
+                    {/* VIDEO NO DESKTOP */}
+                    <video
+                      src={currentModule.video}
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
                       className="w-full h-full object-cover"
-                      loading="eager"
                     />
                   </div>
                   <div className="p-6 lg:p-8">
@@ -143,7 +193,7 @@ const Modules = () => {
           </div>
         </div>
 
-        {/* Mobile - show image for each module */}
+        {/* Mobile */}
         <div className="lg:hidden space-y-4">
           {modules.map((module, index) => (
             <motion.div
@@ -153,13 +203,15 @@ const Modules = () => {
               transition={{ duration: 0.4, delay: index * 0.05 }}
               className="bg-card/10 backdrop-blur-sm rounded-xl border border-secondary-foreground/10 overflow-hidden"
             >
-              {/* Module image on mobile */}
               <div className="aspect-video bg-secondary/30 relative overflow-hidden">
-                <img
-                  src={module.image}
-                  alt={`Módulo ${module.title}`}
+                {/* VIDEO NO MOBILE */}
+                <video
+                  src={module.video}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
                   className="w-full h-full object-cover"
-                  loading="lazy"
                 />
               </div>
               <div className="p-4 sm:p-6">

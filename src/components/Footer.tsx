@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Instagram, Youtube, MessageCircle, ArrowUp } from "lucide-react";
+import { Instagram, Youtube, MessageCircle, ArrowUp, Mail } from "lucide-react";
 import logoWhite from "@/assets/logo_full_white.png";
 
 const Footer = () => {
@@ -110,14 +110,19 @@ const Footer = () => {
           <div>
             <h4 className="font-display text-lg font-semibold text-secondary-foreground mb-6">Fale Conosco</h4>
             <div className="space-y-4">
-              <p className="text-secondary-foreground/70 text-sm italic mb-2 font-light">suporte@bc3.com.br</p>
               <div className="flex flex-col gap-3">
-                 <a href="https://www.instagram.com/bc3tecnologia/" target="_blank" className="flex items-center gap-2 text-sm text-secondary-foreground/70 hover:text-primary transition-colors">
+                  {/* EMAIL COMO LINK (Mailto) */}
+                  <a href="mailto:suporte@bc3.com.br" className="flex items-center gap-2 text-sm text-secondary-foreground/70 hover:text-primary transition-colors">
+                    <Mail size={16} className="text-primary"/> suporte@bc3.com.br
+                  </a>
+                  
+                  <a href="https://www.instagram.com/bc3tecnologia/" target="_blank" className="flex items-center gap-2 text-sm text-secondary-foreground/70 hover:text-primary transition-colors">
                     <Instagram size={16} className="text-primary"/> @bc3tecnologia
-                 </a>
-                 <a href="https://www.youtube.com/@BC3Tecnologia" target="_blank" className="flex items-center gap-2 text-sm text-secondary-foreground/70 hover:text-primary transition-colors">
+                  </a>
+                  
+                  <a href="https://www.youtube.com/@BC3Tecnologia" target="_blank" className="flex items-center gap-2 text-sm text-secondary-foreground/70 hover:text-primary transition-colors">
                     <Youtube size={16} className="text-primary"/> BC3 Tecnologia
-                 </a>
+                  </a>
               </div>
             </div>
             <a href="https://wa.me/5532999851183" className="btn-hero-primary text-sm px-6 py-3 mt-6 inline-flex">

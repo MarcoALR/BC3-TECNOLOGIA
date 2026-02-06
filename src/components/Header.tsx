@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, ChevronDown, Download, MessageCircle, Headphones } from "lucide-react";
+import { Menu, X, ChevronDown, Download, MessageCircle, Headphones, Sun, Moon } from "lucide-react";
 import logo from "@/assets/logo.png";
+import { useTheme } from "@/hooks/use-theme";
 
 const Header = () => {
+  const { theme, toggleTheme } = useTheme();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isSupportOpen, setIsSupportOpen] = useState(false);
@@ -57,6 +59,15 @@ const Header = () => {
                 </a>
               ))}
             </div>
+
+            {/* Theme Toggle */}
+            <button
+              onClick={toggleTheme}
+              className="p-2.5 rounded-full bg-secondary-foreground/10 text-secondary-foreground/80 hover:bg-primary/20 hover:text-primary transition-all duration-300"
+              aria-label="Alternar tema"
+            >
+              {theme === "dark" ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
+            </button>
 
             <div className="relative">
               <button
@@ -147,7 +158,14 @@ const Header = () => {
               exit={{ opacity: 0, x: 50 }}
               className="fixed inset-y-0 right-0 w-full max-w-sm bg-bc3-industrial shadow-2xl z-[60] p-6 lg:hidden"
             >
-              <div className="flex justify-end mb-8">
+              <div className="flex items-center justify-between mb-8">
+                <button
+                  onClick={toggleTheme}
+                  className="p-2.5 rounded-full bg-secondary-foreground/10 text-secondary-foreground/80 hover:bg-primary/20 hover:text-primary transition-all"
+                  aria-label="Alternar tema"
+                >
+                  {theme === "dark" ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+                </button>
                 <button onClick={() => setIsMobileMenuOpen(false)} className="text-secondary-foreground">
                   <X className="w-8 h-8" />
                 </button>

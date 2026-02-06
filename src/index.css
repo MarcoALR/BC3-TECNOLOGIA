@@ -10,27 +10,25 @@
 ============================================ */
 
 @layer base {
+  /* === TEMA CLARO (amarelado suave) === */
   :root {
-    /* Troque o 255, 255, 255 por um tom levemente acinzentado */
-    --background: 210 20% 98%; /* Isso gera um #F8F9FA aproximado */
-    --foreground: 222.2 84% 4.9%;
+    --background: 43 30% 97%;
+    --foreground: 220 20% 12%;
 
-    --card: 0 0% 100%;
+    --card: 43 25% 96%;
     --card-foreground: 220 20% 10%;
 
-    --popover: 0 0% 100%;
+    --popover: 43 25% 96%;
     --popover-foreground: 220 20% 10%;
 
-    /* Amarelo/Dourado BC3 */
     --primary: 43 90% 55%;
     --primary-foreground: 220 20% 10%;
 
-    /* Cinza Escuro */
-    --secondary: 220 15% 20%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 220 10% 88%;
+    --secondary-foreground: 220 15% 15%;
 
-    --muted: 220 15% 92%;
-    --muted-foreground: 220 10% 45%;
+    --muted: 43 15% 92%;
+    --muted-foreground: 220 10% 40%;
 
     --accent: 43 85% 50%;
     --accent-foreground: 220 20% 10%;
@@ -38,8 +36,8 @@
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 220 15% 88%;
-    --input: 220 15% 88%;
+    --border: 43 15% 88%;
+    --input: 43 15% 88%;
     --ring: 43 90% 55%;
 
     --radius: 0.75rem;
@@ -51,32 +49,33 @@
     --bc3-gray-dark: 220 15% 15%;
     --bc3-gray-medium: 220 12% 35%;
     --bc3-gray-light: 220 15% 75%;
-    --bc3-industrial: 215 25% 12%;
+    --bc3-industrial: 43 20% 95%;
     --bc3-steel: 220 10% 25%;
 
     /* === Gradientes === */
-    --gradient-hero: linear-gradient(135deg, hsl(220 15% 12%) 0%, hsl(220 20% 8%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(43 20% 95%) 0%, hsl(43 15% 92%) 100%);
     --gradient-gold: linear-gradient(135deg, hsl(43 90% 55%) 0%, hsl(35 95% 50%) 100%);
-    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(220 20% 97%) 100%);
-    --gradient-dark: linear-gradient(180deg, hsl(220 15% 15%) 0%, hsl(220 20% 8%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(43 25% 96%) 0%, hsl(43 15% 93%) 100%);
+    --gradient-dark: linear-gradient(180deg, hsl(43 20% 95%) 0%, hsl(43 15% 92%) 100%);
 
     /* === Sombras === */
-    --shadow-soft: 0 4px 20px -4px hsl(220 20% 10% / 0.1);
-    --shadow-medium: 0 8px 30px -8px hsl(220 20% 10% / 0.15);
-    --shadow-strong: 0 16px 50px -12px hsl(220 20% 10% / 0.25);
-    --shadow-gold: 0 8px 30px -8px hsl(43 90% 55% / 0.3);
+    --shadow-soft: 0 4px 20px -4px hsl(220 20% 10% / 0.08);
+    --shadow-medium: 0 8px 30px -8px hsl(220 20% 10% / 0.12);
+    --shadow-strong: 0 16px 50px -12px hsl(220 20% 10% / 0.18);
+    --shadow-gold: 0 8px 30px -8px hsl(43 90% 55% / 0.25);
 
     /* Sidebar */
-    --sidebar-background: 220 15% 15%;
-    --sidebar-foreground: 0 0% 95%;
+    --sidebar-background: 43 20% 95%;
+    --sidebar-foreground: 220 15% 15%;
     --sidebar-primary: 43 90% 55%;
     --sidebar-primary-foreground: 220 20% 10%;
-    --sidebar-accent: 220 15% 20%;
-    --sidebar-accent-foreground: 0 0% 95%;
-    --sidebar-border: 220 15% 25%;
+    --sidebar-accent: 43 15% 90%;
+    --sidebar-accent-foreground: 220 15% 15%;
+    --sidebar-border: 43 15% 85%;
     --sidebar-ring: 43 90% 55%;
   }
 
+  /* === TEMA ESCURO === */
   .dark {
     --background: 220 20% 8%;
     --foreground: 0 0% 95%;
@@ -105,6 +104,34 @@
     --border: 220 15% 20%;
     --input: 220 15% 20%;
     --ring: 43 90% 55%;
+
+    --bc3-gold: 43 90% 55%;
+    --bc3-gold-light: 43 85% 65%;
+    --bc3-gold-dark: 40 95% 45%;
+    --bc3-gray-dark: 220 15% 15%;
+    --bc3-gray-medium: 220 12% 35%;
+    --bc3-gray-light: 220 15% 75%;
+    --bc3-industrial: 215 25% 12%;
+    --bc3-steel: 220 10% 25%;
+
+    --gradient-hero: linear-gradient(135deg, hsl(220 15% 12%) 0%, hsl(220 20% 8%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(43 90% 55%) 0%, hsl(35 95% 50%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(220 15% 12%) 0%, hsl(220 20% 9%) 100%);
+    --gradient-dark: linear-gradient(180deg, hsl(220 15% 15%) 0%, hsl(220 20% 8%) 100%);
+
+    --shadow-soft: 0 4px 20px -4px hsl(220 20% 5% / 0.3);
+    --shadow-medium: 0 8px 30px -8px hsl(220 20% 5% / 0.4);
+    --shadow-strong: 0 16px 50px -12px hsl(220 20% 5% / 0.5);
+    --shadow-gold: 0 8px 30px -8px hsl(43 90% 55% / 0.3);
+
+    --sidebar-background: 220 15% 15%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 43 90% 55%;
+    --sidebar-primary-foreground: 220 20% 10%;
+    --sidebar-accent: 220 15% 20%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 220 15% 25%;
+    --sidebar-ring: 43 90% 55%;
   }
 }
 
@@ -186,6 +213,11 @@
 
   /* === Seção Dark === */
   .section-dark {
+    background: hsl(var(--background));
+    color: hsl(var(--foreground));
+  }
+
+  .dark .section-dark {
     background: hsl(220 20% 8%);
     color: hsl(0 0% 95%);
   }

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react"; // Adicionado useEffect aqui
 import {
   ShoppingCart,
   Package,
@@ -18,6 +18,21 @@ const Modules = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
   const [activeModule, setActiveModule] = useState(0);
+
+  // Lógica para ouvir o clique vindo do Footer e trocar o módulo ativo
+  useEffect(() => {
+    const handleChange = (e: any) => {
+      // Verifica se o valor recebido é um número válido dentro da lista
+      if (typeof e.detail === 'number') {
+        setActiveModule(e.detail);
+      }
+    };
+    // Adiciona o "ouvinte" para o evento 'changeModule'
+    window.addEventListener('changeModule', handleChange);
+    
+    // Remove o ouvinte ao fechar o componente para evitar bugs de memória
+    return () => window.removeEventListener('changeModule', handleChange);
+  }, []);
 
   const modules = [
     {
@@ -176,7 +191,6 @@ const Modules = () => {
                     alt={`Módulo ${currentModule.title}`}
                     className="w-full h-full object-cover"
                     onError={(e) => {
-                      // Se a imagem falhar, esconde e mostra o fallback
                       e.currentTarget.style.display = 'none';
                       const fallback = e.currentTarget.nextElementSibling as HTMLElement;
                       if (fallback) fallback.style.display = 'block';
@@ -184,7 +198,7 @@ const Modules = () => {
                   />
                 )}
                 
-                {/* Fallback Display (Sempre existe, mas começa oculto se houver imagem) */}
+                {/* Fallback Display */}
                 <div 
                   className="text-center p-8" 
                   style={{ display: currentModule.image ? 'none' : 'block' }}
@@ -194,7 +208,7 @@ const Modules = () => {
                     {currentModule.imagePlaceholder}
                   </p>
                   <p className="text-secondary-foreground/30 text-xs mt-2">
-                    Imagem do módulo será inserida aqui
+                    Imagem do módulo carregando...
                   </p>
                 </div>
               </div>
@@ -250,4 +264,5 @@ const Modules = () => {
     </section>
   );
 };
+
 export default Modules;

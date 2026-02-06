@@ -42,7 +42,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-center lg:text-left"
-          >
+          ><br />
             <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full border border-primary/30 bg-primary/10 mb-6">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
               <span className="text-xs sm:text-sm font-medium text-primary">

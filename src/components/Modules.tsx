@@ -30,14 +30,23 @@ const Modules = () => {
   }, []);
 
   const modules = [
-    { id: "comercial", icon: ShoppingCart, title: "Comercial", description: "Gestão completa do ciclo de vendas: orçamentos, pedidos, faturamento e acompanhamento de clientes. Controle de comissões e metas da equipe comercial.", features: ["Orçamentos e Pedidos", "Faturamento Automático", "Gestão de Clientes", "Comissões e Metas"], image: "/modulos/comercial.jpeg" },
-    { id: "compras", icon: Package, title: "Compras", description: "Controle de requisições, cotações, pedidos de compra e recebimento de materiais. Gestão de fornecedores e análise de custos.", features: ["Requisições de Compra", "Cotações Automáticas", "Controle de Recebimento", "Gestão de Fornecedores"], image: "/modulos/compras.jpeg" },
-    { id: "producao", icon: Factory, title: "Produção", description: "Planejamento e controle da produção, ordens de fabricação, apontamentos e rastreabilidade completa do processo produtivo industrial.", features: ["Ordens de Produção", "Apontamento de Produção", "PCP Integrado", "Rastreabilidade"], image: "/modulos/producao.jpeg" },
+    { id: "comercial", icon: ShoppingCart, title: "Comercial", description: "Gestão completa do ciclo de vendas: orçamentos, pedidos, faturamento e acompanhamento de clientes. Controle de comissões e metas da equipe comercial.", features: ["Orçamentos e Pedidos", "Emissão de NF-e | Formulário Próprio", "Gestão de Clientes", "Comissões e Metas"], image: "/modulos/comercial.jpeg" },
+
+
+    { id: "compras", icon: Package, title: "Compras", description: "Controle de requisições, cotações, pedidos de compra e recebimento de materiais. Gestão de fornecedores e análise de custos.", features: ["Requisições de Compra", "Entradas de NF | NFD | CT-e", "Controle de Recebimento", "Gestão de Fornecedores"], image: "/modulos/compras.jpeg" },
+
+    { id: "producao", icon: Factory, title: "Produção", description: "Planejamento e controle da produção, ordens de fabricação, apontamentos e rastreabilidade completa do processo produtivo industrial.", features: ["Ordens de Produção", "Apontamento de Produção", "PCP Integrado", "Fluxo por Máquina"], image: "/modulos/producao.jpeg" },
+
     { id: "financeiro", icon: DollarSign, title: "Financeiro", description: "Contas a pagar, contas a receber, fluxo de caixa, conciliação bancária e gestão completa das finanças da empresa.", features: ["Contas a Pagar/Receber", "Fluxo de Caixa", "Conciliação Bancária", "Relatórios Financeiros"], image: "/modulos/financeiro.jpeg" },
-    { id: "fiscal", icon: FileText, title: "Fiscal", description: "Emissão de NF-e, NFC-e, CT-e com validação automática. Escrituração fiscal completa e atualização constante da legislação.", features: ["Emissão NF-e/NFC-e", "Escrituração Fiscal", "Apuração de Impostos", "Atualizações Legais"], image: "/modulos/fiscal.jpeg" },
+
+    { id: "fiscal", icon: FileText, title: "Fiscal", description: "Emissão do sintegra. Escrituração fiscal completa e atualização constante da legislação.", features: ["Relatório do inventário | SN", "Escrituração Fiscal", "Apuração de Impostos", "Atualizações Legais"], image: "/modulos/fiscal.jpeg" },
+
     { id: "bc3docs", icon: FileCheck, title: "BC3Docs", description: "Automação fiscal inteligente: captura automática de documentos, validação de XMLs e integração com sistemas fiscais.", features: ["Captura de XMLs", "Validação Automática", "Manifestação de Destinatário", "Arquivo Centralizado"], image: "/modulos/docs.jpeg" },
+
     { id: "mdfe", icon: Truck, title: "MDF-e", description: "Emissão e gestão de Manifesto Eletrônico de Documentos Fiscais para operações de transporte interestadual e intermunicipal.", features: ["Emissão MDF-e", "Encerramento Automático", "Integração Logística", "Controle de Viagens"], image: "/modulos/mdfe.jpeg" },
+
     { id: "sped", icon: Database, title: "SPED", description: "Geração automatizada de todos os arquivos SPED: EFD ICMS/IPI, EFD Contribuições, ECD, ECF e Bloco K.", features: ["EFD ICMS/IPI", "EFD Contribuições", "Bloco K", "Validação Prévia"], image: "/modulos/sped.jpeg" },
+
     { id: "report", icon: BarChart3, title: "Report", description: "Relatórios gerenciais, dashboards e indicadores de desempenho para tomada de decisão baseada em dados confiáveis.", features: ["Dashboards Gerenciais", "Indicadores KPI", "Relatórios Customizados", "Exportação de Dados"], image: "/modulos/report.jpeg" },
   ];
 
@@ -79,11 +88,10 @@ const Modules = () => {
               <button
                 key={module.id}
                 onClick={() => setActiveModule(index)}
-                className={`w-full flex items-center gap-4 p-4 rounded-xl text-left transition-all duration-300 ${
-                  activeModule === index
+                className={`w-full flex items-center gap-4 p-4 rounded-xl text-left transition-all duration-300 ${activeModule === index
                     ? "bg-primary text-primary-foreground shadow-gold"
                     : "bg-secondary/50 text-secondary-foreground hover:bg-secondary/80"
-                }`}
+                  }`}
               >
                 <module.icon className="w-6 h-6 flex-shrink-0" />
                 <span className="font-medium">{module.title}</span>
@@ -103,8 +111,8 @@ const Modules = () => {
               >
                 <div className="bg-card/10 backdrop-blur-sm rounded-2xl border border-secondary-foreground/10 overflow-hidden">
                   <div className="aspect-video bg-secondary/30 relative overflow-hidden">
-                    <img 
-                      src={currentModule.image} 
+                    <img
+                      src={currentModule.image}
                       alt={`Módulo ${currentModule.title}`}
                       className="w-full h-full object-cover"
                       loading="eager"
@@ -147,8 +155,8 @@ const Modules = () => {
             >
               {/* Module image on mobile */}
               <div className="aspect-video bg-secondary/30 relative overflow-hidden">
-                <img 
-                  src={module.image} 
+                <img
+                  src={module.image}
                   alt={`Módulo ${module.title}`}
                   className="w-full h-full object-cover"
                   loading="lazy"

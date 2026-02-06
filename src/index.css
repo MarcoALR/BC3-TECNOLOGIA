@@ -186,7 +186,7 @@
 
   /* === Seção Dark === */
   .section-dark {
-    background: var(--gradient-dark);
+    background: hsl(220 20% 8%);
     color: hsl(0 0% 95%);
   }
 

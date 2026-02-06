@@ -25,6 +25,8 @@ const Clients = () => {
     { name: "Royal Box", logo: "/logos/royalbox.jpeg" },
     { name: "Vanolle", logo: "/logos/vanolle.jpeg" },
     { name: "Vyle", logo: "/logos/vyle.jpeg" },
+    { name: "JR Decorativo", logo: "/logos/jrdecorativos.jpeg" },
+    { name: "PreviatiPack", logo: "/logos/" },
   ];
 
   const duplicatedClients = [...clients, ...clients];

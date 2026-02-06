@@ -10,7 +10,6 @@ import {
   FileCheck,
   Truck,
   Database,
-  Settings,
   BarChart3,
   ChevronRight,
 } from "lucide-react";
@@ -25,111 +24,82 @@ const Modules = () => {
       id: "comercial",
       icon: ShoppingCart,
       title: "Comercial",
-      description:
-        "Gestão completa do ciclo de vendas: orçamentos, pedidos, faturamento e acompanhamento de clientes. Controle de comissões e metas da equipe comercial.",
+      description: "Gestão completa do ciclo de vendas: orçamentos, pedidos, faturamento e acompanhamento de clientes. Controle de comissões e metas da equipe comercial.",
       features: ["Orçamentos e Pedidos", "Faturamento Automático", "Gestão de Clientes", "Comissões e Metas"],
-      // TODO: Inserir imagem do módulo Comercial aqui
-      // <img src="/images/modulos/comercial.png" alt="Módulo Comercial" />
-      imagePlaceholder: "Screenshot do Módulo Comercial",
+      image: "/modulos/comercial.jpeg",
+      imagePlaceholder: "Módulo Comercial",
     },
     {
       id: "compras",
       icon: Package,
       title: "Compras",
-      description:
-        "Controle de requisições, cotações, pedidos de compra e recebimento de materiais. Gestão de fornecedores e análise de custos.",
+      description: "Controle de requisições, cotações, pedidos de compra e recebimento de materiais. Gestão de fornecedores e análise de custos.",
       features: ["Requisições de Compra", "Cotações Automáticas", "Controle de Recebimento", "Gestão de Fornecedores"],
-      // TODO: Inserir imagem do módulo Compras aqui
-      // <img src="/images/modulos/compras.png" alt="Módulo Compras" />
-      imagePlaceholder: "Screenshot do Módulo Compras",
+      image: "/modulos/compras.jpeg",
+      imagePlaceholder: "Módulo Compras",
     },
     {
       id: "producao",
       icon: Factory,
       title: "Produção",
-      description:
-        "Planejamento e controle da produção, ordens de fabricação, apontamentos e rastreabilidade completa do processo produtivo industrial.",
+      description: "Planejamento e controle da produção, ordens de fabricação, apontamentos e rastreabilidade completa do processo produtivo industrial.",
       features: ["Ordens de Produção", "Apontamento de Produção", "PCP Integrado", "Rastreabilidade"],
-      // TODO: Inserir imagem do módulo Produção aqui
-      // <img src="/images/modulos/producao.png" alt="Módulo Produção" />
-      imagePlaceholder: "Screenshot do Módulo Produção",
+      image: "/modulos/producao.jpeg",
+      imagePlaceholder: "Módulo Produção",
     },
     {
       id: "financeiro",
       icon: DollarSign,
       title: "Financeiro",
-      description:
-        "Contas a pagar, contas a receber, fluxo de caixa, conciliação bancária e gestão completa das finanças da empresa.",
+      description: "Contas a pagar, contas a receber, fluxo de caixa, conciliação bancária e gestão completa das finanças da empresa.",
       features: ["Contas a Pagar/Receber", "Fluxo de Caixa", "Conciliação Bancária", "Relatórios Financeiros"],
-      // TODO: Inserir imagem do módulo Financeiro aqui
-      // <img src="/images/modulos/financeiro.png" alt="Módulo Financeiro" />
-      imagePlaceholder: "Screenshot do Módulo Financeiro",
+      image: "/modulos/financeiro.jpeg",
+      imagePlaceholder: "Módulo Financeiro",
     },
     {
       id: "fiscal",
       icon: FileText,
       title: "Fiscal",
-      description:
-        "Emissão de NF-e, NFC-e, CT-e com validação automática. Escrituração fiscal completa e atualização constante da legislação.",
+      description: "Emissão de NF-e, NFC-e, CT-e com validação automática. Escrituração fiscal completa e atualização constante da legislação.",
       features: ["Emissão NF-e/NFC-e", "Escrituração Fiscal", "Apuração de Impostos", "Atualizações Legais"],
-      // TODO: Inserir imagem do módulo Fiscal aqui
-      // <img src="/images/modulos/fiscal.png" alt="Módulo Fiscal" />
-      imagePlaceholder: "Screenshot do Módulo Fiscal",
+      image: "/modulos/fiscal.jpeg",
+      imagePlaceholder: "Módulo Fiscal",
     },
     {
-      id: "bcdocs",
+      id: "bc3docs",
       icon: FileCheck,
-      title: "BCDocs",
-      description:
-        "Automação fiscal inteligente: captura automática de documentos, validação de XMLs e integração com sistemas fiscais.",
+      title: "BC3Docs",
+      description: "Automação fiscal inteligente: captura automática de documentos, validação de XMLs e integração com sistemas fiscais.",
       features: ["Captura de XMLs", "Validação Automática", "Manifestação de Destinatário", "Arquivo Centralizado"],
-      // TODO: Inserir imagem do módulo BCDocs aqui
-      // <img src="/images/modulos/bcdocs.png" alt="Módulo BCDocs" />
-      imagePlaceholder: "Screenshot do Módulo BCDocs",
+      image: "/modulos/docs.jpeg",
+      imagePlaceholder: "Módulo BC3Docs",
     },
     {
       id: "mdfe",
       icon: Truck,
       title: "MDF-e",
-      description:
-        "Emissão e gestão de Manifesto Eletrônico de Documentos Fiscais para operações de transporte interestadual e intermunicipal.",
+      description: "Emissão e gestão de Manifesto Eletrônico de Documentos Fiscais para operações de transporte interestadual e intermunicipal.",
       features: ["Emissão MDF-e", "Encerramento Automático", "Integração Logística", "Controle de Viagens"],
-      // TODO: Inserir imagem do módulo MDF-e aqui
-      // <img src="/images/modulos/mdfe.png" alt="Módulo MDF-e" />
-      imagePlaceholder: "Screenshot do Módulo MDF-e",
+      image: "/modulos/mdfe.jpeg",
+      imagePlaceholder: "Módulo MDF-e",
     },
     {
       id: "sped",
       icon: Database,
       title: "SPED",
-      description:
-        "Geração automatizada de todos os arquivos SPED: EFD ICMS/IPI, EFD Contribuições, ECD, ECF e Bloco K.",
+      description: "Geração automatizada de todos os arquivos SPED: EFD ICMS/IPI, EFD Contribuições, ECD, ECF e Bloco K.",
       features: ["EFD ICMS/IPI", "EFD Contribuições", "Bloco K", "Validação Prévia"],
-      // TODO: Inserir imagem do módulo SPED aqui
-      // <img src="/images/modulos/sped.png" alt="Módulo SPED" />
-      imagePlaceholder: "Screenshot do Módulo SPED",
-    },
-    {
-      id: "config",
-      icon: Settings,
-      title: "Configuração Local",
-      description:
-        "Personalização e parametrização do sistema conforme as necessidades específicas da sua empresa e processos industriais.",
-      features: ["Parâmetros do Sistema", "Configuração de Usuários", "Permissões de Acesso", "Backup e Segurança"],
-      // TODO: Inserir imagem do módulo Configuração aqui
-      // <img src="/images/modulos/config.png" alt="Módulo Configuração" />
-      imagePlaceholder: "Screenshot do Módulo Configuração",
+      image: "/modulos/sped.jpeg",
+      imagePlaceholder: "Módulo SPED",
     },
     {
       id: "report",
       icon: BarChart3,
       title: "Report",
-      description:
-        "Relatórios gerenciais, dashboards e indicadores de desempenho para tomada de decisão baseada em dados confiáveis.",
+      description: "Relatórios gerenciais, dashboards e indicadores de desempenho para tomada de decisão baseada em dados confiáveis.",
       features: ["Dashboards Gerenciais", "Indicadores KPI", "Relatórios Customizados", "Exportação de Dados"],
-      // TODO: Inserir imagem do módulo Report aqui
-      // <img src="/images/modulos/report.png" alt="Módulo Report" />
-      imagePlaceholder: "Screenshot do Módulo Report",
+      image: "/modulos/report.jpeg",
+      imagePlaceholder: "Módulo Report",
     },
   ];
 
@@ -137,7 +107,6 @@ const Modules = () => {
 
   return (
     <section id="modulos" className="py-24 section-dark relative overflow-hidden" ref={ref}>
-      {/* Background Pattern */}
       <div className="absolute inset-0 grid-lines opacity-20" />
       <div className="particles-bg" />
 
@@ -198,18 +167,28 @@ const Modules = () => {
             className="lg:col-span-8"
           >
             <div className="bg-card/10 backdrop-blur-sm rounded-2xl border border-secondary-foreground/10 overflow-hidden">
-              {/* Image Placeholder */}
-              <div className="aspect-video bg-secondary/30 flex items-center justify-center border-b border-secondary-foreground/10">
-                {/* 
-                  TODO: Inserir imagem/screenshot real do módulo aqui
-                  Substituir este placeholder pela imagem correspondente:
+              
+              {/* Image Area */}
+              <div className="aspect-video bg-secondary/30 flex items-center justify-center border-b border-secondary-foreground/10 relative overflow-hidden">
+                {currentModule.image && (
                   <img 
-                    src={`/images/modulos/${currentModule.id}.png`} 
+                    src={currentModule.image} 
                     alt={`Módulo ${currentModule.title}`}
                     className="w-full h-full object-cover"
+                    onError={(e) => {
+                      // Se a imagem falhar, esconde e mostra o fallback
+                      e.currentTarget.style.display = 'none';
+                      const fallback = e.currentTarget.nextElementSibling as HTMLElement;
+                      if (fallback) fallback.style.display = 'block';
+                    }}
                   />
-                */}
-                <div className="text-center p-8">
+                )}
+                
+                {/* Fallback Display (Sempre existe, mas começa oculto se houver imagem) */}
+                <div 
+                  className="text-center p-8" 
+                  style={{ display: currentModule.image ? 'none' : 'block' }}
+                >
                   <currentModule.icon className="w-16 h-16 text-primary mx-auto mb-4" />
                   <p className="text-secondary-foreground/50 text-sm">
                     {currentModule.imagePlaceholder}
@@ -271,5 +250,4 @@ const Modules = () => {
     </section>
   );
 };
-
 export default Modules;

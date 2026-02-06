@@ -18,11 +18,10 @@ const Integrations = () => {
         "Análises Avançadas",
         "Relatórios Automatizados",
         "Visão Centralizada",
-        "Tomada de Decisão Inteligente",
+        "Tomada de Deicão Inteligente",
       ],
-      // TODO: Inserir logo do Zoho Analytics aqui
-      <img src="/public/logos/zoho.jpeg" alt="Zoho Analytics" />
-      logoPlaceholder: "Logo Zoho Analytics",
+      // LOGO ZOHO: Aumentada e centralizada
+      logo: "/logos/zoho.jpeg", 
       icon: BarChart3,
       highlight: true,
     },
@@ -38,9 +37,8 @@ const Integrations = () => {
         "E-commerce Integrado",
         "Eficiência Operacional",
       ],
-      // TODO: Inserir logo do Bling aqui
-       <img src="/public/logos/bling.jpeg" alt="Bling" />
-      logoPlaceholder: "Logo Bling",
+      // LOGO BLING: Aumentada para ocupar melhor o espaço
+      logo: "/logos/bling.jpeg",
       icon: ShoppingBag,
       highlight: false,
     },
@@ -66,11 +64,9 @@ const Integrations = () => {
 
   return (
     <section id="integracoes" className="py-24 bg-background relative overflow-hidden" ref={ref}>
-      {/* Background */}
       <div className="absolute inset-0 grid-lines opacity-50" />
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
-        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -90,14 +86,8 @@ const Integrations = () => {
           </p>
         </motion.div>
 
-        {/* Benefits */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          className="grid md:grid-cols-3 gap-6 mb-16"
-        >
-          {benefits.map((benefit, index) => (
+        <div className="grid md:grid-cols-3 gap-6 mb-16">
+          {benefits.map((benefit) => (
             <div
               key={benefit.title}
               className="text-center p-6 rounded-2xl bg-card border border-border shadow-soft"
@@ -111,9 +101,8 @@ const Integrations = () => {
               <p className="text-sm text-muted-foreground">{benefit.description}</p>
             </div>
           ))}
-        </motion.div>
+        </div>
 
-        {/* Integration Cards */}
         <div className="grid lg:grid-cols-2 gap-8">
           {integrations.map((integration, index) => (
             <motion.div
@@ -123,7 +112,7 @@ const Integrations = () => {
               transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
               className={`relative rounded-2xl overflow-hidden border ${
                 integration.highlight
-                  ? "border-primary/30 bg-gradient-to-br from-primary/5 to-transparent"
+                  ? "border-primary/30 bg-gradient-to-br from-primary/5 to-transparent shadow-gold"
                   : "border-border bg-card"
               }`}
             >
@@ -132,19 +121,26 @@ const Integrations = () => {
               )}
 
               <div className="p-8">
-                {/* Logo Placeholder */}
-                <div className="flex items-center gap-4 mb-6">
-                  {/* 
-                    TODO: Inserir logo real da integração aqui
-                    <img 
-                      src={`/images/integracoes/${integration.name.toLowerCase().replace(' ', '-')}.png`} 
-                      alt={integration.name}
-                      className="h-12 w-auto"
+                <div className="flex items-center gap-6 mb-6">
+                  {/* Container da Logo aumentado para w-24 h-24 */}
+                  <div className="w-24 h-24 rounded-xl bg-primary/10 flex items-center justify-center overflow-hidden border border-primary/5">
+                    {integration.logo ? (
+                      <img 
+                        src={integration.logo} 
+                        alt={integration.name}
+                        className="w-full h-full object-contain" // Removido p-2 para a logo ocupar mais espaço
+                        onError={(e) => {
+                          e.currentTarget.style.display = 'none';
+                          const fallback = e.currentTarget.nextElementSibling as HTMLElement;
+                          if (fallback) fallback.style.display = 'block';
+                        }}
+                      />
+                    ) : null}
+                    <integration.icon 
+                      className={`w-10 h-10 text-primary ${integration.logo ? 'hidden' : ''}`} 
                     />
-                  */}
-                  <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center">
-                    <integration.icon className="w-8 h-8 text-primary" />
                   </div>
+
                   <div>
                     <h3 className="font-display text-2xl font-bold text-foreground">
                       {integration.name}
@@ -177,7 +173,6 @@ const Integrations = () => {
           ))}
         </div>
 
-        {/* CTA */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}

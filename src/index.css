@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,13 +9,11 @@
    Estilo: Industrial, Corporativo, Moderno
 ============================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap');
-
 @layer base {
   :root {
-    /* === Cores Principais BC3 === */
-    --background: 220 20% 97%;
-    --foreground: 220 20% 10%;
+    /* Troque o 255, 255, 255 por um tom levemente acinzentado */
+    --background: 210 20% 98%; /* Isso gera um #F8F9FA aproximado */
+    --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
     --card-foreground: 220 20% 10%;

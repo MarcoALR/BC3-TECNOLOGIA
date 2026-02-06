@@ -3,11 +3,15 @@ import { ArrowRight, Play, BarChart3, Cog, Shield } from "lucide-react";
 import heroVideo from "@/assets/hero-bg.mp4";
 import iconeBc3 from "@/assets/iconebc3.png";
 
+// Importação das logos para os elementos flutuantes
+import zohoLogo from "/logos/zoho.jpeg"; 
+import blingLogo from "/logos/bling.jpeg";
+
 const Hero = () => {
   const features = [
     { icon: BarChart3, text: "Gestão Integrada" },
     { icon: Cog, text: "Automação Industrial" },
-    { icon: Shield, text: "Dados Confiáveis" },
+    { icon: Shield, text: "Dados Conectados" },
   ];
 
   return (
@@ -15,7 +19,7 @@ const Hero = () => {
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Video Background */}
+      {/* Background de Vídeo com Overlay Industrial */}
       <div className="absolute inset-0 z-0">
         <video
           autoPlay
@@ -26,37 +30,29 @@ const Hero = () => {
         >
           <source src={heroVideo} type="video/mp4" />
         </video>
-        {/* Overlay */}
         <div className="absolute inset-0 bg-gradient-to-br from-bc3-industrial/95 via-bc3-industrial/90 to-bc3-gray-dark/95" />
       </div>
 
-      {/* Particles */}
+      {/* Elementos Decorativos de Fundo */}
       <div className="particles-bg" />
-
-      {/* Grid Lines */}
       <div className="absolute inset-0 grid-lines opacity-30" />
 
-      {/* Content */}
       <div className="container mx-auto px-4 lg:px-8 relative z-10 pt-24">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Text Content */}
+          
+          {/* Lado Esquerdo: Conteúdo de Texto e CTAs */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-center lg:text-left"
           >
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/10 mb-6"
-            >
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/10 mb-6">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
               <span className="text-sm font-medium text-primary">
                 ERP Especializado para Indústria
               </span>
-            </motion.div>
+            </div>
 
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-secondary-foreground leading-tight mb-6">
               Transforme sua{" "}
@@ -69,7 +65,6 @@ const Hero = () => {
               Unificamos vendas, compras, produção, financeiro e fiscal em um único ambiente.
             </p>
 
-            {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
               <a
                 href="https://wa.me/5532999851183?text=Olá! Gostaria de conhecer o ERP KRP."
@@ -110,7 +105,7 @@ const Hero = () => {
             </div>
           </motion.div>
 
-          {/* Hero Image/Icon */}
+          {/* Lado Direito: Logo Central e Integrações Flutuantes */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -118,46 +113,49 @@ const Hero = () => {
             className="hidden lg:flex items-center justify-center"
           >
             <div className="relative">
-              {/* Glow Effect */}
+              {/* Efeito Glow atrás da logo */}
               <div className="absolute inset-0 blur-3xl bg-primary/20 rounded-full scale-150" />
               
-              {/* Main Icon */}
+              {/* Ícone Principal BC3 */}
               <motion.img
                 src={iconeBc3}
                 alt="BC3 Tecnologia"
                 className="relative w-80 h-80 object-contain drop-shadow-2xl"
-                animate={{
-                  y: [0, -15, 0],
-                }}
-                transition={{
-                  duration: 4,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                }}
+                animate={{ y: [0, -15, 0] }}
+                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
               />
 
-              {/* Floating Elements */}
+              {/* CARD ZOHO ANALYTICS (Superior Direito) */}
               <motion.div
-                className="absolute -top-8 -right-8 p-4 bg-card/90 backdrop-blur-sm rounded-xl shadow-strong border border-border"
+                className="absolute -top-8 -right-8 w-24 h-24 bg-white p-3 rounded-2xl shadow-2xl border border-white/20 flex items-center justify-center overflow-hidden"
                 animate={{ y: [0, -10, 0], rotate: [0, 5, 0] }}
                 transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
               >
-                <BarChart3 className="w-8 h-8 text-primary" />
+                <img 
+                  src={zohoLogo} 
+                  alt="Zoho Analytics" 
+                  className="w-full h-full object-contain"
+                />
               </motion.div>
 
+              {/* CARD BLING (Inferior Esquerdo - Tamanho 20x20) */}
               <motion.div
-                className="absolute -bottom-4 -left-8 p-4 bg-card/90 backdrop-blur-sm rounded-xl shadow-strong border border-border"
+                className="absolute -bottom-4 -left-8 w-20 h-20 bg-white p-3 rounded-2xl shadow-2xl border border-white/20 flex items-center justify-center overflow-hidden"
                 animate={{ y: [0, 10, 0], rotate: [0, -5, 0] }}
                 transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1 }}
               >
-                <Cog className="w-8 h-8 text-primary" />
+                <img 
+                  src={blingLogo} 
+                  alt="Bling ERP" 
+                  className="w-full h-full object-contain"
+                />
               </motion.div>
             </div>
           </motion.div>
         </div>
       </div>
 
-      {/* Scroll Indicator */}
+      {/* Indicador de Scroll Inferior */}
       <motion.div
         className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10"
         animate={{ y: [0, 10, 0] }}

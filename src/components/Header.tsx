@@ -10,7 +10,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      setIsScrolled(window.scrollY > 20);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -28,92 +28,120 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "navbar-glass py-3" : "bg-transparent py-5"
+        isScrolled ? "bg-background/90 backdrop-blur-md shadow-lg py-2" : "bg-transparent py-5"
       }`}
     >
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between">
-          {/* Logo */}
-          <a href="#home" className="flex items-center gap-3">
-            <img src={logo} alt="BC3 Tecnologia" className="h-12 w-auto" />
+          
+          {/* Logo - Ajustada conforme solicitado */}
+          <a href="#home" className="flex items-center gap-3 shrink-0">
+            <img
+              src={logo}
+              alt="BC3 Tecnologia"
+              className={`transition-all duration-300 object-contain ${
+                isScrolled ? "h-14" : "h-20"
+              }`}
+              style={{ width: 'auto' }}
+            />
           </a>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                className="text-sm font-medium text-secondary-foreground/90 hover:text-primary transition-colors duration-200"
-              >
-                {link.name}
-              </a>
-            ))}
+          <nav className="hidden lg:flex items-center gap-6">
+            <div className="flex items-center gap-6 mr-4">
+              {navLinks.map((link) => (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  className="text-sm font-medium text-secondary-foreground/80 hover:text-primary transition-colors duration-200"
+                >
+                  {link.name}
+                </a>
+              ))}
+            </div>
 
-            {/* Dropdown Suporte */}
+            {/* Dropdown Suporte - COM DESTAQUE */}
             <div className="relative">
               <button
                 onClick={() => setIsSupportOpen(!isSupportOpen)}
-                className="flex items-center gap-2 text-sm font-medium text-secondary-foreground/90 hover:text-primary transition-colors duration-200"
+                className={`flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 border-2 ${
+                  isSupportOpen 
+                  ? "bg-primary text-primary-foreground border-primary" 
+                  : "bg-primary/10 text-primary border-primary/20 hover:bg-primary/20"
+                }`}
               >
                 <Headphones className="w-4 h-4" />
-                Suporte
+                Suporte Técnico
                 <ChevronDown
-                  className={`w-4 h-4 transition-transform duration-200 ${
-                    isSupportOpen ? "rotate-180" : ""
-                  }`}
+                  className={`w-4 h-4 transition-transform duration-300 ${isSupportOpen ? "rotate-180" : ""}`}
                 />
               </button>
 
               <AnimatePresence>
                 {isSupportOpen && (
                   <motion.div
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 10 }}
-                    className="absolute top-full right-0 mt-2 w-56 bg-card border border-border rounded-xl shadow-strong overflow-hidden z-50"
+                    initial={{ opacity: 0, y: 15, scale: 0.95 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                    exit={{ opacity: 0, y: 15, scale: 0.95 }}
+                    className="absolute top-full right-0 mt-3 w-64 bg-card border border-border rounded-2xl shadow-2xl overflow-hidden z-50 p-2"
                   >
+                    <div className="px-3 py-2 text-[10px] font-bold text-muted-foreground uppercase tracking-widest">
+                      Atendimento Remoto
+                    </div>
                     <a
                       href="https://anydesk.com/pt/downloads"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-3 px-4 py-3 text-sm hover:bg-muted transition-colors"
+                      className="flex items-center gap-3 px-4 py-4 text-sm font-semibold hover:bg-primary/10 rounded-xl transition-all group"
                     >
-                      <Download className="w-4 h-4 text-primary" />
-                      Baixar AnyDesk
+                      <div className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                        <Download className="w-4 h-4" />
+                      </div>
+                      <div>
+                        <p className="text-foreground">Baixar AnyDesk</p>
+                        <p className="text-[10px] text-muted-foreground font-normal">Acesso remoto rápido</p>
+                      </div>
                     </a>
+                    
+                    <div className="my-1 border-t border-border" />
+                    
                     <a
                       href="https://wa.me/5532999851183?text=Olá! Preciso de suporte técnico."
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-3 px-4 py-3 text-sm hover:bg-muted transition-colors border-t border-border"
+                      className="flex items-center gap-3 px-4 py-4 text-sm font-semibold hover:bg-green-500/10 rounded-xl transition-all group"
                     >
-                      <MessageCircle className="w-4 h-4 text-primary" />
-                      Chamar Suporte WhatsApp
+                      <div className="w-8 h-8 rounded-lg bg-green-500/20 flex items-center justify-center text-green-600 group-hover:bg-green-600 group-hover:text-white transition-colors">
+                        <MessageCircle className="w-4 h-4" />
+                      </div>
+                      <div>
+                        <p className="text-foreground">WhatsApp Suporte</p>
+                        <p className="text-[10px] text-muted-foreground font-normal">Fale com um técnico</p>
+                      </div>
                     </a>
                   </motion.div>
                 )}
               </AnimatePresence>
             </div>
-          </nav>
 
-          {/* CTA Button */}
-          <a
-            href="https://wa.me/5532999851183?text=Olá! Gostaria de conhecer o ERP KRP."
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden lg:flex btn-hero-primary text-sm px-6 py-3"
-          >
-            <MessageCircle className="w-4 h-4" />
-            Fale Conosco
-          </a>
+            {/* CTA Button Fale Conosco */}
+            <a
+              href="https://wa.me/5532999851183?text=Olá! Gostaria de conhecer o ERP KRP."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-hero-primary text-sm px-6 py-3 rounded-full flex items-center gap-2 shadow-gold"
+            >
+              <MessageCircle className="w-4 h-4" />
+              Fale Conosco
+            </a>
+          </nav>
 
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="lg:hidden p-2 text-secondary-foreground"
           >
-            {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {isMobileMenuOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
           </button>
         </div>
 
@@ -121,64 +149,53 @@ const Header = () => {
         <AnimatePresence>
           {isMobileMenuOpen && (
             <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: "auto" }}
-              exit={{ opacity: 0, height: 0 }}
-              className="lg:hidden mt-4 pb-4"
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: 50 }}
+              className="fixed inset-y-0 right-0 w-full max-w-sm bg-background/95 backdrop-blur-xl shadow-2xl z-[60] p-6 lg:hidden"
             >
-              <nav className="flex flex-col gap-4">
+              <div className="flex justify-end mb-8">
+                <button onClick={() => setIsMobileMenuOpen(false)}><X className="w-8 h-8" /></button>
+              </div>
+              
+              <nav className="flex flex-col gap-6">
                 {navLinks.map((link) => (
                   <a
                     key={link.name}
                     href={link.href}
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="text-sm font-medium text-secondary-foreground/90 hover:text-primary transition-colors"
+                    className="text-xl font-bold text-foreground border-b border-border pb-2"
                   >
                     {link.name}
                   </a>
                 ))}
-                
-                <div className="border-t border-border pt-4 space-y-3">
+
+                <div className="space-y-4 pt-4">
+                  <p className="text-xs font-bold text-muted-foreground uppercase tracking-widest">Suporte ao Cliente</p>
                   <a
                     href="https://anydesk.com/pt/downloads"
                     target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-sm"
+                    className="flex items-center gap-4 p-4 bg-primary/10 rounded-2xl text-primary font-bold"
                   >
-                    <Download className="w-4 h-4 text-primary" />
-                    Baixar AnyDesk
+                    <Download className="w-5 h-5" /> Baixar AnyDesk
                   </a>
                   <a
-                    href="https://wa.me/5532999851183?text=Olá! Preciso de suporte técnico."
+                    href="https://wa.me/5532999851183"
                     target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-sm"
+                    className="flex items-center gap-4 p-4 bg-green-500/10 rounded-2xl text-green-600 font-bold"
                   >
-                    <MessageCircle className="w-4 h-4 text-primary" />
-                    Suporte WhatsApp
+                    <MessageCircle className="w-5 h-5" /> Suporte WhatsApp
                   </a>
                 </div>
-
-                <a
-                  href="https://wa.me/5532999851183?text=Olá! Gostaria de conhecer o ERP KRP."
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-hero-primary text-sm px-6 py-3 mt-2"
-                >
-                  Fale Conosco
-                </a>
               </nav>
             </motion.div>
           )}
         </AnimatePresence>
       </div>
 
-      {/* Click outside to close dropdown */}
+      {/* Overlay para fechar o dropdown ao clicar fora */}
       {isSupportOpen && (
-        <div
-          className="fixed inset-0 z-40"
-          onClick={() => setIsSupportOpen(false)}
-        />
+        <div className="fixed inset-0 z-40 bg-black/5" onClick={() => setIsSupportOpen(false)} />
       )}
     </header>
   );

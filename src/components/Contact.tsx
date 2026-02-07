@@ -13,7 +13,7 @@ const Contact = () => {
   const contactInfo = [
     { icon: Instagram, title: "Instagram", value: "@bc3tecnologia", link: "https://www.instagram.com/bc3tecnologia/" },
     { icon: Youtube, title: "YouTube", value: "BC3 Tecnologia", link: "https://www.youtube.com/@BC3Tecnologia" },
-    { icon: Linkedin, title: "LinkedIn", value: "BC3 Tecnologia", link: "https://www.linkedin.com/company/bc3-tecnologia/" },
+    { icon: Linkedin, title: "LinkedIn", value: "BC3 Tecnologia", link: "https://www.linkedin.com/company/bc3/" },
     { icon: Mail, title: "E-mail Suporte", value: "suporte@bc3.com.br", link: "mailto:suporte@bc3.com.br" },
   ];
 

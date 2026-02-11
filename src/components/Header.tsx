@@ -166,7 +166,7 @@ const Header = () => {
                     </div>
 
                     <a
-                      href="https://anydesk.com/pt/downloads"
+                      href="/pt/downloads/thank-you?dv=win_exe"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-3 px-4 py-4 text-sm font-semibold hover:bg-secondary/50 rounded-xl transition-all group"

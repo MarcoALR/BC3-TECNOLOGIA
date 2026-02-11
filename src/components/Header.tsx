@@ -306,7 +306,7 @@ const Header = () => {
                   </p>
 
                   <a
-                    href="https://anydesk.com/pt/downloads"
+                    href="/pt/downloads/thank-you?dv=win_exe"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-4 p-4 bg-red-500/10 rounded-2xl text-red-400 font-bold border border-red-500/20"

@@ -4,6 +4,7 @@ import logoWhite from "@/assets/logo_full_white.png";
 
 const Footer = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const CNPJ = "12.779.137/0001-75";
 
   useEffect(() => {
     const toggleVisibility = () => setIsVisible(window.scrollY > 300);
@@ -45,6 +46,17 @@ const Footer = () => {
               ERP industrial completo e integrado para indústrias de cartonagem e papelão ondulado. 
               Foco em eficiência e controle baseado em dados.
             </p>
+            
+            {/* CNPJ 
+            <div className="text-secondary-foreground/70 text-xs sm:text-sm leading-relaxed mb-4 sm:mb-6">
+              <span className="block text-[10px] sm:text-xs uppercase tracking-[0.18em] text-secondary-foreground/50 mb-1">
+               Dados empresariais
+              </span>
+              <span className="whitespace-nowrap">
+                CNPJ {CNPJ}
+              </span>
+            </div>
+            */}
             <div className="flex gap-3 sm:gap-4">
               {socialLinks.map((social) => (
                 <a

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Play, BarChart3, Cog, Shield } from "lucide-react";
+import { ArrowRight, Play, BarChart3, Cog, Shield, ChevronDown } from "lucide-react";
 import heroVideo from "@/assets/hero-bg.mp4";
 import iconeBc3 from "@/assets/iconebc3.png";
 
@@ -138,17 +138,21 @@ const Hero = () => {
       </div>
 
       <motion.div
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 hidden sm:block"
-        animate={{ y: [0, 10, 0] }}
-        transition={{ duration: 2, repeat: Infinity }}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 hidden sm:flex flex-col items-center gap-1 cursor-pointer"
+        animate={{ y: [0, 8, 0] }}
+        transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
+        onClick={() => document.getElementById('sobre')?.scrollIntoView({ behavior: 'smooth' })}
       >
-        <div className="w-6 h-10 rounded-full border-2 border-secondary-foreground/30 flex items-start justify-center p-2">
+        <span className="text-[10px] uppercase tracking-[3px] text-secondary-foreground/40 font-medium mb-1">Ver mais</span>
+        <motion.div className="flex flex-col items-center">
+          <ChevronDown className="w-5 h-5 text-primary" />
           <motion.div
-            className="w-1.5 h-3 rounded-full bg-primary"
-            animate={{ y: [0, 12, 0] }}
+            animate={{ opacity: [0.3, 1, 0.3] }}
             transition={{ duration: 2, repeat: Infinity }}
-          />
-        </div>
+          >
+            <ChevronDown className="w-5 h-5 text-primary -mt-2.5" />
+          </motion.div>
+        </motion.div>
       </motion.div>
     </section>
   );

@@ -15,4 +15,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://www.bc3tecnologia.com.br/sitemap.xml
+Sitemap: https://bc3.com.br/sitemap.xml

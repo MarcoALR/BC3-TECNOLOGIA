@@ -2,7 +2,12 @@ import { useState, useEffect } from "react";
 import { Instagram, Youtube, MessageCircle, ArrowUp, Mail } from "lucide-react";
 import logoWhite from "@/assets/logo_full_white.png";
 
-const Footer = () => {
+interface FooterProps {
+  seoHeading?: string;
+  seoSlug?: string;
+}
+
+const Footer = ({ seoHeading, seoSlug }: FooterProps) => {
   const [isVisible, setIsVisible] = useState(false);
   const CNPJ = "12.779.137/0001-75";
 
@@ -138,6 +143,47 @@ const Footer = () => {
             By Marco
           </a>
         </div>
+
+        {/* SEO Content */}
+        {seoHeading && (
+          <div className="sr-only" aria-hidden="true">
+            <h2>{seoHeading}</h2>
+            <p>
+              A BC3 Tecnologia é referência em {seoHeading.toLowerCase()} no Brasil. 
+              Nosso ERP KRP é um sistema completo para indústrias de cartonagem e papelão ondulado, 
+              oferecendo módulos integrados de produção, PCP, comercial, compras, financeiro, fiscal, 
+              MDF-e, SPED e relatórios gerenciais. Com mais de 25 clientes atendidos em todo o território nacional, 
+              somos a empresa de software para cartonagem que mais cresce no mercado.
+            </p>
+            <p>
+              O sistema de gestão para cartonagem da BC3 Tecnologia permite o cálculo de custo de caixas de papelão ondulado, 
+              controle completo de produção, planejamento e controle de produção (PCP), gestão de pedidos, 
+              emissão de notas fiscais eletrônicas (NF-e), manifestação de documentos fiscais eletrônicos (MDF-e), 
+              SPED Fiscal e Contribuições, além de relatórios gerenciais e dashboards em tempo real.
+            </p>
+            <p>
+              Nosso ERP para cartonagem na nuvem é acessível de qualquer lugar, sem necessidade de instalação local. 
+              O software para fabricante de caixa de papelão inclui cálculo automático de gramatura, 
+              composição de chapas, otimização de corte, controle de estoque de matéria-prima e produto acabado, 
+              gestão de expedição e logística, contas a pagar e receber, fluxo de caixa e conciliação bancária.
+            </p>
+            <p>
+              Se você busca um programa para cartonagem, sistema de controle para cartonagem, 
+              software para indústria de embalagens, ERP para indústria gráfica, sistema para caixa de papelão, 
+              gestão industrial para cartonagem ou sistema de gerenciamento para cartonagem, 
+              o KRP da BC3 Tecnologia é a solução ideal para sua empresa. 
+              Entre em contato e solicite uma demonstração gratuita do melhor ERP para cartonagem do Brasil.
+            </p>
+            {seoSlug && (
+              <p>
+                Página otimizada para: {seoSlug.replace(/-/g, ' ')}. 
+                BC3 Tecnologia - sistema ERP especializado para cartonagem, papelão ondulado, 
+                indústria de embalagens e indústria gráfica. Software de gestão industrial completo 
+                com módulos de produção, comercial, compras, financeiro, fiscal, documentos eletrônicos e relatórios.
+              </p>
+            )}
+          </div>
+        )}
       </div>
 
       <button

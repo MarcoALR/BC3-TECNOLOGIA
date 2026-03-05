@@ -130,6 +130,72 @@ const Footer = ({ seoHeading, seoSlug }: FooterProps) => {
           </div>
         </div>
 
+        {/* SEO Pages Links */}
+        <div className="py-8 sm:py-10 border-b border-secondary-foreground/10">
+          <h4 className="font-display text-base sm:text-lg font-semibold text-secondary-foreground mb-4 sm:mb-6 text-center">
+            Soluções para Cartonagem e Papelão Ondulado
+          </h4>
+          <div className="flex flex-wrap justify-center gap-2 sm:gap-3">
+            {[
+              { slug: "erp-cartonagem", label: "ERP para Cartonagem" },
+              { slug: "sistema-cartonagem", label: "Sistema para Cartonagem" },
+              { slug: "software-cartonagem", label: "Software para Cartonagem" },
+              { slug: "sistema-papelao-ondulado", label: "Sistema Papelão Ondulado" },
+              { slug: "erp-industria-papelao", label: "ERP Indústria de Papelão" },
+              { slug: "software-industria-embalagens", label: "Software Indústria de Embalagens" },
+              { slug: "sistema-gestao-cartonagem", label: "Sistema de Gestão Cartonagem" },
+              { slug: "sistema-erp-cartonagem", label: "Sistema ERP Cartonagem" },
+              { slug: "programa-cartonagem", label: "Programa para Cartonagem" },
+              { slug: "sistema-pcp-cartonagem", label: "Sistema PCP Cartonagem" },
+              { slug: "software-fabricante-caixa-papelao", label: "Software Fabricante Caixa Papelão" },
+              { slug: "sistema-controle-cartonagem", label: "Sistema Controle Cartonagem" },
+              { slug: "erp-cartonagem-nuvem", label: "ERP Cartonagem Nuvem" },
+              { slug: "sistema-calculo-cartonagem", label: "Sistema Cálculo Cartonagem" },
+              { slug: "software-papelao-ondulado", label: "Software Papelão Ondulado" },
+              { slug: "sistema-industria-papelao-ondulado", label: "Sistema Indústria Papelão Ondulado" },
+              { slug: "gestao-industrial-cartonagem", label: "Gestão Industrial Cartonagem" },
+              { slug: "sistema-caixa-papelao", label: "Sistema Caixa de Papelão" },
+              { slug: "erp-industria-grafica", label: "ERP Indústria Gráfica" },
+              { slug: "software-industria-caixa-papelao", label: "Software Indústria Caixa Papelão" },
+              { slug: "calculo-custo-caixa-papelao-ondulado", label: "Cálculo Custo Caixa Papelão" },
+              { slug: "empresa-software-cartonagem", label: "Empresa Software Cartonagem" },
+              { slug: "sistema-gerenciamento-cartonagem", label: "Sistema Gerenciamento Cartonagem" },
+              { slug: "erp-embalagens-papelao", label: "ERP Embalagens de Papelão" },
+              { slug: "sistema-producao-cartonagem", label: "Sistema Produção Cartonagem" },
+              { slug: "software-gestao-embalagens", label: "Software Gestão Embalagens" },
+              { slug: "erp-fabrica-caixas", label: "ERP Fábrica de Caixas" },
+              { slug: "sistema-orcamento-cartonagem", label: "Sistema Orçamento Cartonagem" },
+              { slug: "software-nfe-cartonagem", label: "Software NF-e Cartonagem" },
+              { slug: "erp-cartonagem-sao-paulo", label: "ERP Cartonagem São Paulo" },
+              { slug: "erp-cartonagem-minas-gerais", label: "ERP Cartonagem Minas Gerais" },
+              { slug: "erp-cartonagem-parana", label: "ERP Cartonagem Paraná" },
+              { slug: "erp-cartonagem-santa-catarina", label: "ERP Cartonagem Santa Catarina" },
+              { slug: "erp-cartonagem-rio-grande-do-sul", label: "ERP Cartonagem Rio Grande do Sul" },
+              { slug: "erp-cartonagem-goias", label: "ERP Cartonagem Goiás" },
+              { slug: "erp-cartonagem-rio-de-janeiro", label: "ERP Cartonagem Rio de Janeiro" },
+              { slug: "erp-cartonagem-bahia", label: "ERP Cartonagem Bahia" },
+              { slug: "erp-cartonagem-nordeste", label: "ERP Cartonagem Nordeste" },
+              { slug: "sistema-flexografia-cartonagem", label: "Sistema Flexografia Cartonagem" },
+              { slug: "software-corte-vinco-cartonagem", label: "Software Corte e Vinco" },
+              { slug: "erp-onduladeira", label: "ERP para Onduladeira" },
+              { slug: "sistema-expedicao-cartonagem", label: "Sistema Expedição Cartonagem" },
+              { slug: "software-estoque-papelao-ondulado", label: "Software Estoque Papelão" },
+              { slug: "erp-cartonagem-pequena-empresa", label: "ERP Pequena Empresa" },
+              { slug: "sistema-fiscal-cartonagem", label: "Sistema Fiscal Cartonagem" },
+              { slug: "sistema-vendas-cartonagem", label: "Sistema Vendas Cartonagem" },
+              { slug: "software-orcamento-caixa-papelao", label: "Software Orçamento Caixa Papelão" },
+            ].map((page) => (
+              <a
+                key={page.slug}
+                href={`/${page.slug}`}
+                className="px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-[10px] sm:text-xs bg-secondary/20 text-secondary-foreground/60 hover:bg-primary/20 hover:text-primary border border-secondary-foreground/10 hover:border-primary/30 transition-all duration-300"
+              >
+                {page.label}
+              </a>
+            ))}
+          </div>
+        </div>
+
         <div className="py-8 sm:py-12 flex flex-col items-center gap-3 sm:gap-4">
           <p className="text-secondary-foreground/40 text-[10px] sm:text-xs text-center uppercase tracking-widest">
             © {new Date().getFullYear()} BC3 Tecnologia em Software. Todos os direitos reservados.

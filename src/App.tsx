@@ -5,8 +5,35 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import SeoRedirect from "./pages/SeoRedirect";
 
 const queryClient = new QueryClient();
+
+const seoRoutes = [
+  "erp-cartonagem",
+  "sistema-cartonagem",
+  "software-cartonagem",
+  "sistema-papelao-ondulado",
+  "erp-industria-papelao",
+  "software-industria-embalagens",
+  "sistema-gestao-cartonagem",
+  "sistema-erp-cartonagem",
+  "programa-cartonagem",
+  "sistema-pcp-cartonagem",
+  "software-fabricante-caixa-papelao",
+  "sistema-controle-cartonagem",
+  "erp-cartonagem-nuvem",
+  "sistema-calculo-cartonagem",
+  "software-papelao-ondulado",
+  "sistema-industria-papelao-ondulado",
+  "gestao-industrial-cartonagem",
+  "sistema-caixa-papelao",
+  "erp-industria-grafica",
+  "software-industria-caixa-papelao",
+  "calculo-custo-caixa-papelao-ondulado",
+  "empresa-software-cartonagem",
+  "sistema-gerenciamento-cartonagem",
+];
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -16,7 +43,9 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          {seoRoutes.map((route) => (
+            <Route key={route} path={`/${route}`} element={<SeoRedirect />} />
+          ))}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

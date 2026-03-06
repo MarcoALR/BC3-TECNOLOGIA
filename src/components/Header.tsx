@@ -16,6 +16,9 @@ import { useTheme } from "@/hooks/use-theme";
 
 const Header = () => {
   const { theme, toggleTheme } = useTheme();
+  const location = useLocation();
+  const navigate = useNavigate();
+  const isHome = location.pathname === "/";
 
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -38,7 +41,6 @@ const Header = () => {
 
     handleScroll();
     window.addEventListener("scroll", handleScroll, { passive: true });
-    // captura também (alguns layouts mudam o elemento rolável)
     document.addEventListener("scroll", handleScroll, { passive: true, capture: true });
 
     return () => {
@@ -83,6 +85,27 @@ const Header = () => {
     { name: "Clientes", href: "#clientes" },
     { name: "Contato", href: "#contato" },
   ];
+
+  const handleNavClick = (e: React.MouseEvent, href: string) => {
+    e.preventDefault();
+    if (!isHome) {
+      // Navigate to home first, then scroll to section
+      navigate("/");
+      if (href !== "#home") {
+        setTimeout(() => {
+          const el = document.querySelector(href);
+          el?.scrollIntoView({ behavior: "smooth" });
+        }, 300);
+      }
+    } else {
+      if (href === "#home") {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      } else {
+        const el = document.querySelector(href);
+        el?.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
 
   const closeMobile = () => setIsMobileMenuOpen(false);
 

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Instagram, Youtube, MessageCircle, ArrowUp, Mail } from "lucide-react";
+import { Link } from "react-router-dom";
 import logoWhite from "@/assets/logo_full_white.png";
 
 interface FooterProps {
@@ -185,13 +186,13 @@ const Footer = ({ seoHeading, seoSlug }: FooterProps) => {
               { slug: "sistema-vendas-cartonagem", label: "Sistema Vendas Cartonagem" },
               { slug: "software-orcamento-caixa-papelao", label: "Software Orçamento Caixa Papelão" },
             ].map((page) => (
-              <a
+              <Link
                 key={page.slug}
-                href={`/${page.slug}`}
+                to={`/${page.slug}`}
                 className="px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-[10px] sm:text-xs bg-secondary/20 text-secondary-foreground/60 hover:bg-primary/20 hover:text-primary border border-secondary-foreground/10 hover:border-primary/30 transition-all duration-300"
               >
                 {page.label}
-              </a>
+              </Link>
             ))}
           </div>
         </div>

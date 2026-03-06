@@ -44,6 +44,11 @@ const PageLayout = ({ title, description, canonical, scrollTo, seoHeading, seoSl
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="BC3 Tecnologia" />
         <meta property="og:locale" content="pt_BR" />
+        <meta property="og:image" content="https://bc3.com.br/logos/logo.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content="https://bc3.com.br/logos/logo.png" />
         <link rel="canonical" href={canonical} />
       </Helmet>
       <div className="min-h-screen">

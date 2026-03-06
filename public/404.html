@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>BC3 Tecnologia</title>
+  <script>
+    // SPA fallback for GitHub Pages / static hosts
+    // Stores the real path and redirects to index.html
+    // index.html then reads this and uses replaceState to restore the URL
+    sessionStorage.setItem('spa-redirect', window.location.pathname + window.location.search + window.location.hash);
+    window.location.replace('/');
+  </script>
+</head>
+<body>
+  <noscript>
+    <p>Redirecionando para <a href="/">BC3 Tecnologia</a>...</p>
+  </noscript>
+</body>
+</html>

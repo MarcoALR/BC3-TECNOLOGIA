@@ -427,6 +427,11 @@ const SeoRedirect = () => {
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="BC3 Tecnologia" />
         <meta property="og:locale" content="pt_BR" />
+        <meta property="og:image" content="https://bc3.com.br/logos/logo.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={meta.title} />
+        <meta name="twitter:description" content={meta.description} />
+        <meta name="twitter:image" content="https://bc3.com.br/logos/logo.png" />
         <link rel="canonical" href={`https://bc3.com.br/${slug}`} />
         <script type="application/ld+json">
           {JSON.stringify(generateJsonLd(slug, meta.title, meta.description))}

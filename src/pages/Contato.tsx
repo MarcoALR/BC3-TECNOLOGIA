@@ -8,6 +8,7 @@ const Contato = () => (
     scrollTo="contato"
     seoHeading="Contato BC3 Tecnologia"
     seoSlug="contato"
+    keywords="contato BC3 Tecnologia, demonstração ERP KRP, demonstração gratuita cartonagem, falar com BC3, WhatsApp BC3, solicitar demonstração ERP cartonagem, contato sistema cartonagem, orçamento ERP cartonagem, agendar demonstração papelão ondulado, ERP cartonagem, melhor ERP cartonagem, sistema cartonagem, BC3 Tecnologia"
   />
 );
 

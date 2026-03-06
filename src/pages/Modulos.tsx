@@ -8,6 +8,7 @@ const Modulos = () => (
     scrollTo="modulos"
     seoHeading="Módulos do ERP KRP"
     seoSlug="modulos"
+    keywords="módulos ERP KRP, módulo comercial cartonagem, módulo produção cartonagem, módulo compras cartonagem, módulo financeiro cartonagem, módulo fiscal cartonagem, BCDocs cartonagem, MDF-e cartonagem, SPED cartonagem, Report cartonagem, PCP cartonagem, módulo vendas ERP, módulo NF-e cartonagem, módulos sistema cartonagem, funcionalidades ERP cartonagem, ERP cartonagem, melhor ERP cartonagem, sistema cartonagem, software cartonagem, BC3 Tecnologia"
   />
 );
 

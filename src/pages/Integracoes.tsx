@@ -8,6 +8,7 @@ const Integracoes = () => (
     scrollTo="integracoes"
     seoHeading="Integrações do ERP KRP"
     seoSlug="integracoes"
+    keywords="integrações ERP KRP, integração Zoho CRM cartonagem, integração SPED cartonagem, integração NF-e cartonagem, integração MDF-e cartonagem, API ERP cartonagem, integração bancária cartonagem, integração transportadora cartonagem, ERP integrado cartonagem, sistema integrado papelão ondulado, ERP cartonagem, melhor ERP cartonagem, sistema cartonagem, BC3 Tecnologia, software cartonagem"
   />
 );
 

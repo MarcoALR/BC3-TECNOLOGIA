@@ -10,6 +10,7 @@ import Footer from "@/components/Footer";
 import { useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import SeoContent from "@/components/SeoContent";
+import { seoKeywords, generateJsonLd } from "@/data/seoKeywords";
 
 const seoMeta: Record<string, { title: string; description: string; h2: string }> = {
   "erp-cartonagem": {
@@ -263,7 +264,18 @@ const SeoRedirect = () => {
       <Helmet>
         <title>{meta.title}</title>
         <meta name="description" content={meta.description} />
+        <meta name="keywords" content={seoKeywords[slug] || "ERP cartonagem, sistema cartonagem, software cartonagem, papelão ondulado, BC3 Tecnologia, ERP KRP, melhor ERP cartonagem, sistema gestão cartonagem, ERP industrial, software papelão ondulado, gestão industrial cartonagem, cálculo custo caixa papelão, ERP nuvem cartonagem, sistema produção cartonagem, PCP cartonagem, ERP caixa papelão, sistema fábrica caixas, controle produção papelão ondulado, orçamento cartonagem, NF-e cartonagem, SPED cartonagem, MDF-e cartonagem, ERP embalagens, software fábrica papelão"} />
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+        <meta property="og:title" content={meta.title} />
+        <meta property="og:description" content={meta.description} />
+        <meta property="og:url" content={`https://bc3.com.br/${slug}`} />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="BC3 Tecnologia" />
+        <meta property="og:locale" content="pt_BR" />
         <link rel="canonical" href={`https://bc3.com.br/${slug}`} />
+        <script type="application/ld+json">
+          {JSON.stringify(generateJsonLd(slug, meta.title, meta.description))}
+        </script>
       </Helmet>
       <div className="min-h-screen">
         <Header />

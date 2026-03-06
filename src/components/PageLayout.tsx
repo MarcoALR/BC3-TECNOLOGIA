@@ -17,9 +17,10 @@ interface PageLayoutProps {
   scrollTo?: string;
   seoHeading?: string;
   seoSlug?: string;
+  keywords?: string;
 }
 
-const PageLayout = ({ title, description, canonical, scrollTo, seoHeading, seoSlug }: PageLayoutProps) => {
+const PageLayout = ({ title, description, canonical, scrollTo, seoHeading, seoSlug, keywords }: PageLayoutProps) => {
   useEffect(() => {
     if (scrollTo) {
       setTimeout(() => {
@@ -28,11 +29,21 @@ const PageLayout = ({ title, description, canonical, scrollTo, seoHeading, seoSl
     }
   }, [scrollTo]);
 
+  const defaultKeywords = "ERP cartonagem, sistema cartonagem, software cartonagem, ERP papelão ondulado, melhor ERP cartonagem, BC3 Tecnologia, ERP KRP, sistema KRP, gestão industrial cartonagem, PCP cartonagem, cálculo custo caixa papelão, ERP nuvem cartonagem, NF-e cartonagem, SPED cartonagem, MDF-e cartonagem, ERP fábrica caixas, software papelão ondulado, ERP embalagens, sistema produção cartonagem, controle produção cartonagem";
+
   return (
     <ThemeProvider>
       <Helmet>
         <title>{title}</title>
         <meta name="description" content={description} />
+        <meta name="keywords" content={keywords || defaultKeywords} />
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:url" content={canonical} />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="BC3 Tecnologia" />
+        <meta property="og:locale" content="pt_BR" />
         <link rel="canonical" href={canonical} />
       </Helmet>
       <div className="min-h-screen">

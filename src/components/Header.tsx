@@ -138,6 +138,7 @@ const Header = () => {
                 <a
                   key={link.name}
                   href={link.href}
+                  onClick={(e) => handleNavClick(e, link.href)}
                   className="text-sm font-bold text-secondary-foreground/90 hover:text-primary transition-colors duration-200"
                 >
                   {link.name}

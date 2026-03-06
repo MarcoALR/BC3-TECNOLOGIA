@@ -248,6 +248,161 @@ const seoMeta: Record<string, { title: string; description: string; h2: string }
     description: "Software para orçamento de caixas de papelão ondulado. Cálculo automático de preço com base em composição de chapa, impressão e acabamento.",
     h2: "Software de Orçamento para Caixa de Papelão",
   },
+  "preco-erp-cartonagem": {
+    title: "Preço ERP para Cartonagem | Quanto Custa o Melhor Sistema - BC3",
+    description: "Descubra o preço do ERP para cartonagem KRP. Mensalidade acessível com todos os módulos inclusos. Solicite orçamento sem compromisso.",
+    h2: "Preço do ERP para Cartonagem",
+  },
+  "preco-software-cartonagem": {
+    title: "Preço Software para Cartonagem | Investimento Inteligente - BC3",
+    description: "Preço do software para cartonagem KRP. Automação completa da sua fábrica de papelão ondulado por uma mensalidade fixa e acessível.",
+    h2: "Preço do Software para Cartonagem",
+  },
+  "preco-sistema-cartonagem": {
+    title: "Preço Sistema para Cartonagem | Planos Acessíveis - BC3 Tecnologia",
+    description: "Conheça o preço do sistema para cartonagem KRP. Planos para todos os portes de indústria de papelão ondulado. Solicite proposta gratuita.",
+    h2: "Preço do Sistema para Cartonagem",
+  },
+  "valor-erp-cartonagem": {
+    title: "Valor ERP para Cartonagem | Melhor Custo-Benefício - BC3",
+    description: "O valor do ERP para cartonagem KRP é o melhor do mercado. TCO até 60% menor que ERPs genéricos. Resultado comprovado por 25+ clientes.",
+    h2: "Valor do ERP para Cartonagem",
+  },
+  "valor-sistema-cartonagem": {
+    title: "Valor Sistema para Cartonagem | Investimento com Retorno - BC3",
+    description: "Valor do sistema para cartonagem KRP com retorno garantido. Módulos completos de produção, PCP, comercial, financeiro e fiscal inclusos.",
+    h2: "Valor do Sistema para Cartonagem",
+  },
+  "valor-software-cartonagem": {
+    title: "Valor Software para Cartonagem | Tecnologia Acessível - BC3",
+    description: "Valor do software para cartonagem KRP. Tecnologia especializada para papelão ondulado por mensalidade fixa. Sem taxas ocultas.",
+    h2: "Valor do Software para Cartonagem",
+  },
+  "orcamento-erp-cartonagem": {
+    title: "Orçamento ERP para Cartonagem | Proposta Gratuita - BC3 Tecnologia",
+    description: "Solicite orçamento do ERP para cartonagem KRP. Proposta personalizada em até 48h. Demonstração gratuita. Sem compromisso.",
+    h2: "Orçamento de ERP para Cartonagem",
+  },
+  "orcamento-software-cartonagem": {
+    title: "Orçamento Software para Cartonagem | Proposta Personalizada - BC3",
+    description: "Solicite orçamento do software para cartonagem. Planos para todos os portes de indústria de papelão ondulado. Demonstração gratuita.",
+    h2: "Orçamento de Software para Cartonagem",
+  },
+  "empresa-sistema-cartonagem": {
+    title: "Empresa de Sistema para Cartonagem | BC3 Tecnologia - Líder Nacional",
+    description: "BC3 Tecnologia: empresa líder em sistema para cartonagem no Brasil. Mais de 25 clientes. Sistema KRP especializado em papelão ondulado.",
+    h2: "Empresa de Sistema para Cartonagem",
+  },
+  "empresa-erp-cartonagem": {
+    title: "Empresa de ERP para Cartonagem | BC3 Tecnologia - Referência Nacional",
+    description: "BC3 Tecnologia: empresa referência em ERP para cartonagem. Software especializado para indústrias de papelão ondulado em todo o Brasil.",
+    h2: "Empresa de ERP para Cartonagem",
+  },
+  "empresa-especialista-cartonagem": {
+    title: "Empresa Especialista em Cartonagem | BC3 Tecnologia - ERP KRP",
+    description: "BC3 Tecnologia: empresa especialista em software para cartonagem e papelão ondulado. Mais de 10 anos de experiência exclusiva no setor.",
+    h2: "Empresa Especialista em Cartonagem",
+  },
+  "empresa-sistema-industrial": {
+    title: "Empresa de Sistema Industrial | Soluções ERP para Embalagens - BC3",
+    description: "BC3 Tecnologia: empresa de sistema industrial para fabricantes de embalagens de papelão ondulado. ERP KRP completo e especializado.",
+    h2: "Empresa de Sistema Industrial",
+  },
+  "solucao-erp-cartonagem": {
+    title: "Solução ERP para Cartonagem | Sistema Completo e Integrado - BC3",
+    description: "Solução ERP completa para cartonagem. Sistema integrado com produção, PCP, comercial, financeiro, fiscal e expedição. Demonstração gratuita.",
+    h2: "Solução ERP para Cartonagem",
+  },
+  "solucao-industria-cartonagem": {
+    title: "Solução para Indústria de Cartonagem | ERP Especializado - BC3",
+    description: "Solução completa para indústria de cartonagem. ERP KRP com módulos especializados para papelão ondulado. 25+ clientes no Brasil.",
+    h2: "Solução para Indústria de Cartonagem",
+  },
+  "software-industria-cartonagem": {
+    title: "Software para Indústria de Cartonagem | Automação Industrial - BC3",
+    description: "Software especializado para indústria de cartonagem. Automação de orçamentos, produção, PCP, financeiro e fiscal. Sistema na nuvem.",
+    h2: "Software para Indústria de Cartonagem",
+  },
+  "sistema-industria-embalagens": {
+    title: "Sistema para Indústria de Embalagens | ERP Completo - BC3 Tecnologia",
+    description: "Sistema para indústria de embalagens de papelão ondulado. Gestão completa de produção, custos, vendas, estoque e fiscal integrados.",
+    h2: "Sistema para Indústria de Embalagens",
+  },
+  "erp-industria-embalagens": {
+    title: "ERP para Indústria de Embalagens | Gestão Especializada - BC3",
+    description: "ERP para indústria de embalagens de papelão. Gestão completa com produção, PCP, comercial, financeiro e fiscal. 25+ clientes.",
+    h2: "ERP para Indústria de Embalagens",
+  },
+  "sistema-controle-producao-cartonagem": {
+    title: "Sistema Controle de Produção Cartonagem | Tempo Real - BC3",
+    description: "Sistema de controle de produção para cartonagem. Monitoramento em tempo real, apontamento via tablet, OEE e rastreabilidade completa.",
+    h2: "Sistema de Controle de Produção para Cartonagem",
+  },
+  "sistema-estoque-papelao": {
+    title: "Sistema de Estoque para Papelão | Controle de Chapas e Bobinas - BC3",
+    description: "Sistema de controle de estoque para papelão ondulado. Gestão de chapas, bobinas, insumos e produtos acabados com rastreabilidade.",
+    h2: "Sistema de Estoque para Papelão",
+  },
+  "software-orcamento-caixas": {
+    title: "Software de Orçamento para Caixas | Cálculo Automático - BC3",
+    description: "Software de orçamento para caixas de papelão ondulado. Propostas comerciais em segundos com cálculo automático de custo e preço.",
+    h2: "Software de Orçamento para Caixas",
+  },
+  "sistema-financeiro-cartonagem": {
+    title: "Sistema Financeiro para Cartonagem | Controle Total - BC3 Tecnologia",
+    description: "Sistema financeiro para cartonagem. Contas a pagar e receber, fluxo de caixa, DRE, conciliação bancária e boletos integrados ao ERP.",
+    h2: "Sistema Financeiro para Cartonagem",
+  },
+  "calculo-custo-cartonagem": {
+    title: "Cálculo de Custo na Cartonagem | Guia Completo - BC3 Tecnologia",
+    description: "Aprenda como calcular o custo de produção na cartonagem. Guia completo com todas as variáveis: matéria-prima, mão de obra e custos indiretos.",
+    h2: "Cálculo de Custo na Cartonagem",
+  },
+  "calculo-custo-caixa-papelao": {
+    title: "Cálculo de Custo de Caixa de Papelão | Como Precificar - BC3",
+    description: "Como calcular o custo de uma caixa de papelão ondulado. Fórmulas, variáveis e exemplos práticos. Software com cálculo automático.",
+    h2: "Cálculo de Custo de Caixa de Papelão",
+  },
+  "como-calcular-caixa-papelao": {
+    title: "Como Calcular Caixa de Papelão | Passo a Passo - BC3 Tecnologia",
+    description: "Guia passo a passo de como calcular caixa de papelão ondulado. Das dimensões ao preço final. Software com cálculo automático em segundos.",
+    h2: "Como Calcular Caixa de Papelão",
+  },
+  "como-gerenciar-cartonagem": {
+    title: "Como Gerenciar uma Cartonagem | Guia de Gestão Industrial - BC3",
+    description: "Guia completo de como gerenciar uma cartonagem. Gestão comercial, produção, custos, financeiro e fiscal com ERP especializado.",
+    h2: "Como Gerenciar uma Cartonagem",
+  },
+  "controle-producao-cartonagem": {
+    title: "Controle de Produção para Cartonagem | Eficiência Industrial - BC3",
+    description: "Controle de produção para cartonagem com monitoramento em tempo real. Apontamento via tablet, OEE, rastreabilidade e controle de refugo.",
+    h2: "Controle de Produção para Cartonagem",
+  },
+  "gestao-producao-cartonagem": {
+    title: "Gestão de Produção para Cartonagem | PCP Integrado - BC3 Tecnologia",
+    description: "Gestão de produção para cartonagem com PCP integrado ao ERP. Sequenciamento automático, Kanban digital e MRP para papelão ondulado.",
+    h2: "Gestão de Produção para Cartonagem",
+  },
+  "controle-industria-papelao": {
+    title: "Controle de Indústria de Papelão | ERP Especializado - BC3",
+    description: "Controle completo de indústria de papelão ondulado. Dashboards em tempo real para produção, estoque, vendas, financeiro e fiscal.",
+    h2: "Controle de Indústria de Papelão",
+  },
+  "como-funciona-pcp-cartonagem": {
+    title: "Como Funciona o PCP na Cartonagem | Guia Completo - BC3 Tecnologia",
+    description: "Entenda como funciona o PCP na cartonagem. Planejamento, programação e controle de produção para fábricas de papelão ondulado.",
+    h2: "Como Funciona o PCP na Cartonagem",
+  },
+  "gestao-industrial-embalagens": {
+    title: "Gestão Industrial de Embalagens | ERP para Fabricantes - BC3",
+    description: "Gestão industrial de embalagens de papelão ondulado. ERP completo com produção, PCP, comercial, financeiro e fiscal integrados.",
+    h2: "Gestão Industrial de Embalagens",
+  },
+  "erp-cartonagem-brasil": {
+    title: "ERP para Cartonagem em Todo o Brasil | Atendimento Nacional - BC3",
+    description: "ERP para cartonagem com atendimento em todo o Brasil. 26 estados + DF. Sistema na nuvem para indústrias de papelão ondulado. 25+ clientes.",
+    h2: "ERP para Cartonagem em Todo o Brasil",
+  },
 };
 
 const SeoRedirect = () => {

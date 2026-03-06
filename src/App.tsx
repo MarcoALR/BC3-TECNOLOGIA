@@ -64,6 +64,43 @@ const seoRoutes = [
   "sistema-fiscal-cartonagem",
   "sistema-vendas-cartonagem",
   "software-orcamento-caixa-papelao",
+  // Commercial routes
+  "preco-erp-cartonagem",
+  "preco-software-cartonagem",
+  "preco-sistema-cartonagem",
+  "valor-erp-cartonagem",
+  "valor-sistema-cartonagem",
+  "valor-software-cartonagem",
+  "orcamento-erp-cartonagem",
+  "orcamento-software-cartonagem",
+  // Company routes
+  "empresa-sistema-cartonagem",
+  "empresa-erp-cartonagem",
+  "empresa-especialista-cartonagem",
+  "empresa-sistema-industrial",
+  // Industrial solution routes
+  "solucao-erp-cartonagem",
+  "solucao-industria-cartonagem",
+  "software-industria-cartonagem",
+  "sistema-industria-embalagens",
+  "erp-industria-embalagens",
+  // Feature routes
+  "sistema-controle-producao-cartonagem",
+  "sistema-estoque-papelao",
+  "software-orcamento-caixas",
+  "sistema-financeiro-cartonagem",
+  // Educational routes
+  "calculo-custo-cartonagem",
+  "calculo-custo-caixa-papelao",
+  "como-calcular-caixa-papelao",
+  "como-gerenciar-cartonagem",
+  "controle-producao-cartonagem",
+  "gestao-producao-cartonagem",
+  "controle-industria-papelao",
+  "como-funciona-pcp-cartonagem",
+  "gestao-industrial-embalagens",
+  // Geographic
+  "erp-cartonagem-brasil",
 ];
 
 const App = () => (

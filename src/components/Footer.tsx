@@ -185,6 +185,43 @@ const Footer = ({ seoHeading, seoSlug }: FooterProps) => {
               { slug: "sistema-fiscal-cartonagem", label: "Sistema Fiscal Cartonagem" },
               { slug: "sistema-vendas-cartonagem", label: "Sistema Vendas Cartonagem" },
               { slug: "software-orcamento-caixa-papelao", label: "Software Orçamento Caixa Papelão" },
+              // Commercial
+              { slug: "preco-erp-cartonagem", label: "Preço ERP Cartonagem" },
+              { slug: "preco-software-cartonagem", label: "Preço Software Cartonagem" },
+              { slug: "preco-sistema-cartonagem", label: "Preço Sistema Cartonagem" },
+              { slug: "valor-erp-cartonagem", label: "Valor ERP Cartonagem" },
+              { slug: "valor-sistema-cartonagem", label: "Valor Sistema Cartonagem" },
+              { slug: "valor-software-cartonagem", label: "Valor Software Cartonagem" },
+              { slug: "orcamento-erp-cartonagem", label: "Orçamento ERP Cartonagem" },
+              { slug: "orcamento-software-cartonagem", label: "Orçamento Software Cartonagem" },
+              // Company
+              { slug: "empresa-sistema-cartonagem", label: "Empresa Sistema Cartonagem" },
+              { slug: "empresa-erp-cartonagem", label: "Empresa ERP Cartonagem" },
+              { slug: "empresa-especialista-cartonagem", label: "Empresa Especialista Cartonagem" },
+              { slug: "empresa-sistema-industrial", label: "Empresa Sistema Industrial" },
+              // Industrial solutions
+              { slug: "solucao-erp-cartonagem", label: "Solução ERP Cartonagem" },
+              { slug: "solucao-industria-cartonagem", label: "Solução Indústria Cartonagem" },
+              { slug: "software-industria-cartonagem", label: "Software Indústria Cartonagem" },
+              { slug: "sistema-industria-embalagens", label: "Sistema Indústria Embalagens" },
+              { slug: "erp-industria-embalagens", label: "ERP Indústria Embalagens" },
+              // Features
+              { slug: "sistema-controle-producao-cartonagem", label: "Controle Produção Cartonagem" },
+              { slug: "sistema-estoque-papelao", label: "Sistema Estoque Papelão" },
+              { slug: "software-orcamento-caixas", label: "Software Orçamento Caixas" },
+              { slug: "sistema-financeiro-cartonagem", label: "Sistema Financeiro Cartonagem" },
+              // Educational
+              { slug: "calculo-custo-cartonagem", label: "Cálculo Custo Cartonagem" },
+              { slug: "calculo-custo-caixa-papelao", label: "Cálculo Custo Caixa Papelão" },
+              { slug: "como-calcular-caixa-papelao", label: "Como Calcular Caixa Papelão" },
+              { slug: "como-gerenciar-cartonagem", label: "Como Gerenciar Cartonagem" },
+              { slug: "controle-producao-cartonagem", label: "Controle Produção Cartonagem" },
+              { slug: "gestao-producao-cartonagem", label: "Gestão Produção Cartonagem" },
+              { slug: "controle-industria-papelao", label: "Controle Indústria Papelão" },
+              { slug: "como-funciona-pcp-cartonagem", label: "Como Funciona PCP Cartonagem" },
+              { slug: "gestao-industrial-embalagens", label: "Gestão Industrial Embalagens" },
+              // Geographic
+              { slug: "erp-cartonagem-brasil", label: "ERP Cartonagem Brasil" },
             ].map((page) => (
               <Link
                 key={page.slug}

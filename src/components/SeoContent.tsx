@@ -678,6 +678,428 @@ const seoContent: Record<string, { heading: string; content: React.ReactNode }> 
       </>
     ),
   },
+  // ===== NEW COMMERCIAL ROUTES =====
+  "preco-erp-cartonagem": {
+    heading: "Preço do ERP para Cartonagem — Investimento Inteligente para sua Indústria",
+    content: (
+      <>
+        <p>Você está pesquisando o <strong>preço de ERP para cartonagem</strong>? A BC3 Tecnologia oferece o melhor custo-benefício do mercado com o ERP KRP — o sistema mais completo e especializado para indústrias de papelão ondulado e fabricantes de caixas de papelão em todo o Brasil. Diferente de ERPs genéricos que cobram valores exorbitantes por customizações, o KRP já vem pronto para o setor de cartonagem, o que significa implantação mais rápida e investimento muito menor.</p>
+        <p>O <strong>preço do ERP para cartonagem</strong> KRP é acessível para empresas de todos os portes — desde pequenas cartonagens com faturamento a partir de R$ 500 mil/ano até grandes operações industriais com múltiplas linhas de produção. Trabalhamos com mensalidade fixa, sem surpresas, sem taxas ocultas e sem cobrança por número de notas fiscais emitidas. O valor inclui atualizações contínuas, backup na nuvem, suporte técnico e acesso ilimitado a todos os módulos.</p>
+        <h3>O que está incluído no preço?</h3>
+        <p>Ao contratar o ERP KRP, você recebe: implantação assistida por consultores especializados em cartonagem, treinamento completo para toda a equipe, migração de dados do sistema anterior, módulos de produção, PCP, comercial, compras, financeiro, fiscal (NF-e, CT-e, MDF-e, SPED), relatórios gerenciais, dashboards em tempo real, acesso via web e mobile, backup diário automático e suporte técnico dedicado. Tudo isso por um valor mensal fixo e previsível.</p>
+        <h3>Compare antes de decidir</h3>
+        <p>Muitas indústrias de cartonagem cometem o erro de escolher ERPs genéricos apenas pelo preço baixo inicial, sem perceber que as customizações necessárias para o setor de papelão ondulado — como cálculo de custo de caixas, composição de chapas, gestão de clichês e controle de produção específico — acabam custando 3 a 5 vezes mais do que o valor original. Com o KRP, tudo isso já está incluso no preço padrão.</p>
+        <FeaturesList extras={["Preço fixo mensal sem surpresas", "Sem cobrança por volume de notas fiscais", "Implantação e treinamento inclusos no pacote"]} />
+        <h3>Solicite uma proposta personalizada</h3>
+        <p>O <strong>preço do ERP para cartonagem</strong> varia conforme o porte da empresa, número de usuários e módulos desejados. Entre em contato conosco para receber uma proposta personalizada e descubra como o ERP KRP pode transformar a gestão da sua indústria com o melhor investimento do mercado.</p>
+        <p>{regionContent}</p>
+        <p>A BC3 Tecnologia atende indústrias de cartonagem em São Paulo (SP), Minas Gerais (MG), Paraná (PR), Santa Catarina (SC), Rio Grande do Sul (RS), Rio de Janeiro (RJ), Goiás (GO), Bahia (BA), Pernambuco (PE), Ceará (CE), Espírito Santo (ES) e todos os demais estados. Nosso <strong>ERP para cartonagem</strong> funciona 100% na nuvem, garantindo acesso de qualquer cidade do Brasil.</p>
+      </>
+    ),
+  },
+  "preco-software-cartonagem": {
+    heading: "Preço do Software para Cartonagem — Quanto Custa Automatizar sua Fábrica",
+    content: (
+      <>
+        <p>Descubra o <strong>preço do software para cartonagem</strong> mais completo do Brasil. O ERP KRP da BC3 Tecnologia oferece automação industrial total para fábricas de caixas de papelão ondulado com um investimento justo e acessível. Nosso software já inclui cálculo de custo de caixas, controle de produção, PCP, gestão comercial, financeiro, fiscal e expedição — sem necessidade de customizações caras.</p>
+        <p>O <strong>preço do software para cartonagem</strong> KRP contempla: licença de uso ilimitada, atualizações automáticas, suporte técnico especializado, backup na nuvem, implantação assistida e treinamento da equipe. Tudo em uma mensalidade fixa que cabe no orçamento da sua indústria.</p>
+        <h3>Investimento que se paga rapidamente</h3>
+        <p>Clientes que implementaram o software KRP relatam redução de até 30% no tempo de geração de orçamentos, diminuição de 20% no desperdício de matéria-prima e aumento de 25% na produtividade do chão de fábrica. Esses ganhos de eficiência fazem o investimento no software se pagar em poucos meses.</p>
+        <FeaturesList extras={["ROI comprovado em menos de 6 meses", "Redução de custos operacionais", "Eliminação de planilhas e retrabalho"]} />
+        <p>{regionContent}</p>
+      </>
+    ),
+  },
+  "preco-sistema-cartonagem": {
+    heading: "Preço do Sistema para Cartonagem — Planos Acessíveis para Todos os Portes",
+    content: (
+      <>
+        <p>Está buscando o <strong>preço de sistema para cartonagem</strong>? O KRP da BC3 Tecnologia tem planos acessíveis para indústrias de todos os portes. Desde pequenas cartonagens com equipes enxutas até grandes fábricas de papelão ondulado com centenas de colaboradores, temos a solução certa para o seu orçamento.</p>
+        <p>Nosso <strong>sistema para cartonagem</strong> é oferecido no modelo SaaS (Software as a Service), com mensalidade fixa que inclui todos os módulos, suporte técnico, atualizações e infraestrutura na nuvem. Não há custos com servidores, licenças adicionais ou taxas de manutenção.</p>
+        <h3>Planos flexíveis</h3>
+        <p>Oferecemos planos que se adaptam à realidade da sua fábrica de caixas de papelão. O preço é calculado com base no número de usuários simultâneos e módulos contratados. Todas as funcionalidades específicas para cartonagem — cálculo de custo, composição de chapas, gestão de produção, PCP, NF-e, SPED — estão incluídas em todos os planos.</p>
+        <FeaturesList />
+        <p>{regionContent}</p>
+      </>
+    ),
+  },
+  "valor-erp-cartonagem": {
+    heading: "Valor do ERP para Cartonagem — O Melhor Custo-Benefício do Mercado",
+    content: (
+      <>
+        <p>O <strong>valor do ERP para cartonagem</strong> KRP é reconhecido como o melhor custo-benefício do mercado brasileiro. Enquanto ERPs genéricos como SAP, TOTVS e outros cobram valores muito superiores e ainda exigem customizações caras para atender o setor de papelão ondulado, o KRP oferece uma solução pronta, especializada e muito mais acessível.</p>
+        <p>Quando analisamos o <strong>valor do ERP para cartonagem</strong>, é fundamental considerar não apenas o preço da mensalidade, mas o custo total de propriedade (TCO): implantação, treinamento, customizações, manutenção, suporte e atualizações. No KRP, todos esses itens estão inclusos, tornando o investimento total significativamente menor que alternativas genéricas.</p>
+        <h3>Valor que gera retorno</h3>
+        <p>O verdadeiro valor de um ERP está nos resultados que ele proporciona. Com o KRP, indústrias de cartonagem reportam: aumento médio de 25% na produtividade, redução de 15% no desperdício de matéria-prima, diminuição de 40% no tempo de emissão de orçamentos e melhoria de 30% no controle financeiro. Esses resultados se traduzem em maior lucratividade e competitividade.</p>
+        <FeaturesList extras={["TCO (Custo Total de Propriedade) até 60% menor que ERPs genéricos", "Resultados mensuráveis desde o primeiro mês de uso"]} />
+        <p>{regionContent}</p>
+      </>
+    ),
+  },
+  "valor-sistema-cartonagem": {
+    heading: "Valor do Sistema para Cartonagem — Investimento com Retorno Garantido",
+    content: (
+      <>
+        <p>Entenda o <strong>valor do sistema para cartonagem</strong> KRP e por que mais de 25 indústrias de papelão ondulado em todo o Brasil escolheram a BC3 Tecnologia. Nosso sistema oferece o melhor retorno sobre investimento do mercado, com funcionalidades exclusivas para o setor de cartonagem que eliminam a necessidade de customizações caras e demoradas.</p>
+        <p>O <strong>valor do sistema para cartonagem</strong> inclui módulos completos de: orçamento com cálculo automático de custo, comercial com gestão de pedidos e follow-up, compras com cotações e controle de fornecedores, produção com PCP e apontamento em tempo real, financeiro com contas a pagar e receber, fiscal com NF-e, CT-e, MDF-e e SPED, além de relatórios gerenciais e dashboards.</p>
+        <FeaturesList />
+        <p>{regionContent}</p>
+      </>
+    ),
+  },
+  "valor-software-cartonagem": {
+    heading: "Valor do Software para Cartonagem — Tecnologia Acessível para sua Fábrica",
+    content: (
+      <>
+        <p>O <strong>valor do software para cartonagem</strong> KRP da BC3 Tecnologia é o mais competitivo do mercado para a qualidade e especialização oferecidas. Desenvolvido exclusivamente para indústrias de papelão ondulado e fabricantes de caixas de papelão, nosso software entrega valor real desde o primeiro dia de uso.</p>
+        <p>Diferente de soluções genéricas que precisam de adaptações para funcionar no setor de cartonagem — gerando custos adicionais imprevistos —, o KRP já nasce pronto para a sua fábrica. Isso significa que o <strong>valor total do software</strong> é transparente e previsível, sem surpresas ao longo do contrato.</p>
+        <h3>O que você ganha pelo valor investido</h3>
+        <p>Por uma mensalidade fixa, você tem acesso a: cálculo automático de custo de caixas (considerando chapa, impressão, acabamento, mão de obra e custos indiretos), controle de produção com PCP integrado, gestão comercial completa, controle financeiro, emissão de documentos fiscais eletrônicos, SPED, relatórios gerenciais, dashboards, acesso na nuvem de qualquer dispositivo, suporte técnico especializado e atualizações contínuas.</p>
+        <FeaturesList />
+        <p>{regionContent}</p>
+      </>
+    ),
+  },
+  "orcamento-erp-cartonagem": {
+    heading: "Orçamento de ERP para Cartonagem — Solicite sua Proposta Gratuita",
+    content: (
+      <>
+        <p>Solicite agora um <strong>orçamento de ERP para cartonagem</strong> sem compromisso. A BC3 Tecnologia analisa as necessidades da sua indústria de papelão ondulado e elabora uma proposta personalizada com o melhor custo-benefício do mercado. Nossa equipe de consultores especializados em cartonagem está pronta para entender seus desafios e apresentar a solução ideal.</p>
+        <p>O <strong>orçamento do ERP para cartonagem</strong> KRP é transparente e detalhado, incluindo: licença de uso do sistema, implantação assistida, migração de dados, treinamento da equipe, suporte técnico, atualizações e infraestrutura na nuvem. Sem letras pequenas, sem taxas ocultas.</p>
+        <h3>Como solicitar seu orçamento</h3>
+        <p>É simples: entre em contato pelo WhatsApp, e-mail ou formulário de contato do site. Um consultor especializado em cartonagem irá agendar uma demonstração do sistema e, em seguida, apresentar o orçamento personalizado para sua fábrica de caixas de papelão. O processo é rápido — em até 48 horas você recebe sua proposta.</p>
+        <FeaturesList />
+        <p>{regionContent}</p>
+      </>
+    ),
+  },
+  "orcamento-software-cartonagem": {
+    heading: "Orçamento de Software para Cartonagem — Proposta Personalizada",
+    content: (
+      <>
+        <p>Precisa de um <strong>orçamento de software para cartonagem</strong>? A BC3 Tecnologia oferece propostas personalizadas para indústrias de todos os portes. Seja sua fábrica uma pequena cartonagem com 10 funcionários ou uma grande operação com centenas de colaboradores, temos o plano ideal para sua necessidade e orçamento.</p>
+        <p>Nosso <strong>software para cartonagem</strong> KRP é a referência do mercado brasileiro, com mais de 25 clientes ativos em todo o país. O orçamento inclui todos os módulos necessários para a gestão completa da sua fábrica de papelão ondulado: produção, PCP, comercial, compras, financeiro, fiscal, expedição e relatórios.</p>
+        <FeaturesList extras={["Demonstração gratuita antes da contratação", "Orçamento sem compromisso em até 48 horas"]} />
+        <p>{regionContent}</p>
+      </>
+    ),
+  },
+  // ===== COMPANY ROUTES =====
+  "empresa-sistema-cartonagem": {
+    heading: "Empresa de Sistema para Cartonagem — BC3 Tecnologia",
+    content: (
+      <>
+        <p>A BC3 Tecnologia é a principal <strong>empresa de sistema para cartonagem</strong> do Brasil. Com mais de uma década de experiência exclusiva no setor de papelão ondulado e embalagens de cartonagem, desenvolvemos o ERP KRP — o sistema mais completo, especializado e confiável do mercado para indústrias de caixas de papelão.</p>
+        <p>Como <strong>empresa de sistema para cartonagem</strong>, nossa missão é transformar a gestão industrial dos nossos clientes através de tecnologia de ponta e conhecimento profundo do setor. Cada funcionalidade do KRP foi projetada por quem entende a realidade de uma fábrica de papelão ondulado — desde o cálculo de custo de caixas até a expedição do produto acabado.</p>
+        <h3>Por que a BC3 é a melhor empresa de sistema para cartonagem?</h3>
+        <ul className="space-y-2 my-4 text-muted-foreground">
+          {["Mais de 10 anos de experiência exclusiva no setor de cartonagem", "Mais de 25 clientes ativos em todo o Brasil", "Equipe de consultores especializados em papelão ondulado", "Sistema 100% na nuvem com atualizações contínuas", "Implantação assistida com treinamento completo", "Suporte técnico dedicado e responsivo", "Desenvolvimento contínuo baseado no feedback dos clientes do setor"].map((item, i) => (
+            <li key={i} className="flex items-start gap-2"><span className="text-primary">★</span>{item}</li>
+          ))}
+        </ul>
+        <p>{regionContent}</p>
+      </>
+    ),
+  },
+  "empresa-erp-cartonagem": {
+    heading: "Empresa de ERP para Cartonagem — Líder Nacional em Software Industrial",
+    content: (
+      <>
+        <p>Procurando a melhor <strong>empresa de ERP para cartonagem</strong>? A BC3 Tecnologia é líder nacional em sistemas de gestão para indústrias de papelão ondulado. Nossa empresa nasceu com o propósito de resolver os desafios únicos do setor de cartonagem, oferecendo um ERP que fala a língua da sua fábrica.</p>
+        <p>Enquanto outras empresas oferecem ERPs genéricos que precisam ser adaptados (a alto custo) para o setor de papelão ondulado, a BC3 Tecnologia desenvolveu o KRP especificamente para cartonagem. Isso significa que funcionalidades como cálculo de custo de caixas, composição de chapas, gestão de clichês, controle de produção flexográfica e PCP industrial já estão prontas para uso desde o primeiro dia.</p>
+        <FeaturesList />
+        <p>Escolher a <strong>empresa de ERP certa para sua cartonagem</strong> é uma decisão estratégica que impacta toda a operação. Com a BC3 Tecnologia, você tem a certeza de estar com o parceiro mais experiente e dedicado do setor.</p>
+        <p>{regionContent}</p>
+      </>
+    ),
+  },
+  "empresa-especialista-cartonagem": {
+    heading: "Empresa Especialista em Cartonagem — BC3 Tecnologia, Referência Nacional",
+    content: (
+      <>
+        <p>A BC3 Tecnologia é a <strong>empresa especialista em cartonagem</strong> mais reconhecida do Brasil. Nosso foco exclusivo no setor de papelão ondulado e embalagens de cartonagem nos permite oferecer soluções de software que nenhuma outra empresa do mercado consegue igualar em profundidade e especialização.</p>
+        <p>Ser uma <strong>empresa especialista em cartonagem</strong> significa entender cada detalhe da fabricação de caixas de papelão ondulado: tipos de onda (B, C, BC, E, F), composição de chapas, gramatura de papéis (kraft, miolo, capa), processos de impressão flexográfica, corte e vinco, colagem, grampeamento, paletização e expedição. Todo esse conhecimento está embarcado no ERP KRP.</p>
+        <h3>Especialização que faz a diferença</h3>
+        <p>Nossos consultores de implantação são treinados no setor de cartonagem. Eles entendem a terminologia, os processos, os desafios e as oportunidades da sua indústria. Isso resulta em implantações mais rápidas, menos erros e resultados melhores desde o início.</p>
+        <FeaturesList extras={["Consultores especializados no setor de cartonagem", "Conhecimento profundo de todos os processos industriais", "Vocabulário técnico do setor embarcado no sistema"]} />
+        <p>{regionContent}</p>
+      </>
+    ),
+  },
+  "empresa-sistema-industrial": {
+    heading: "Empresa de Sistema Industrial — Soluções ERP para Indústrias de Embalagens",
+    content: (
+      <>
+        <p>A BC3 Tecnologia é uma <strong>empresa de sistema industrial</strong> focada em soluções ERP para o setor de embalagens de papelão ondulado. Nosso sistema KRP atende fabricantes de caixas de papelão, embalagens industriais, displays de ponto de venda, embalagens para e-commerce e todos os tipos de produtos em cartonagem.</p>
+        <p>Como <strong>empresa de sistema industrial</strong>, entendemos que cada fábrica tem suas particularidades. Por isso, o ERP KRP oferece configurações flexíveis que se adaptam ao porte, ao fluxo de trabalho e às necessidades específicas de cada cliente — sem perder a robustez e a integração que um sistema industrial exige.</p>
+        <FeaturesList extras={["Customização sem programação para cada fábrica", "Escalabilidade para acompanhar o crescimento da empresa"]} />
+        <p>{regionContent}</p>
+      </>
+    ),
+  },
+  // ===== INDUSTRIAL SOLUTION ROUTES =====
+  "solucao-erp-cartonagem": {
+    heading: "Solução ERP para Cartonagem — Sistema Completo e Integrado",
+    content: (
+      <>
+        <p>A BC3 Tecnologia apresenta a <strong>solução ERP para cartonagem</strong> mais completa do Brasil. O ERP KRP integra todos os departamentos da sua fábrica de papelão ondulado em uma única plataforma na nuvem: comercial, compras, produção, PCP, financeiro, fiscal, expedição e relatórios gerenciais. Tudo conectado, em tempo real, sem redundância de dados.</p>
+        <p>Nossa <strong>solução ERP para cartonagem</strong> elimina os problemas mais comuns das indústrias do setor: informações desencontradas entre departamentos, falta de controle de custos, dificuldade na geração de orçamentos, atrasos na produção, erros fiscais e falta de visibilidade gerencial. Com o KRP, cada processo é automatizado e rastreado.</p>
+        <h3>Uma solução completa para sua indústria</h3>
+        <p>O ERP KRP oferece: orçamento com cálculo automático de custo de caixas, gestão de pedidos e follow-up, cotação e aprovação de compras, programação de produção por máquina, apontamento em tempo real no chão de fábrica, controle financeiro com fluxo de caixa, emissão de NF-e/CT-e/MDF-e, SPED Fiscal e Contribuições, dashboards e KPIs em tempo real.</p>
+        <FeaturesList />
+        <p>{regionContent}</p>
+      </>
+    ),
+  },
+  "solucao-industria-cartonagem": {
+    heading: "Solução para Indústria de Cartonagem — Tecnologia que Transforma Resultados",
+    content: (
+      <>
+        <p>Descubra a <strong>solução para indústria de cartonagem</strong> que já transformou mais de 25 fábricas de papelão ondulado em todo o Brasil. O ERP KRP da BC3 Tecnologia é uma solução completa que cobre toda a cadeia de valor — do primeiro contato comercial à entrega do produto acabado ao cliente.</p>
+        <p>Nossa <strong>solução para indústria de cartonagem</strong> foi desenvolvida por quem conhece o setor de papelão ondulado em profundidade. Cada tela, cada relatório, cada cálculo foi pensado para resolver problemas reais de fábricas de caixas de papelão. Não é um ERP genérico adaptado — é uma solução nativa para cartonagem.</p>
+        <FeaturesList extras={["Solução desenvolvida nativamente para cartonagem", "Mais de 25 fábricas já utilizam com sucesso"]} />
+        <p>{regionContent}</p>
+      </>
+    ),
+  },
+  "software-industria-cartonagem": {
+    heading: "Software para Indústria de Cartonagem — Automação e Controle Total",
+    content: (
+      <>
+        <p>O <strong>software para indústria de cartonagem</strong> KRP é referência em automação e controle para fábricas de caixas de papelão ondulado. Desenvolvido pela BC3 Tecnologia, nosso software integra todos os processos da sua indústria em uma plataforma única, moderna e na nuvem.</p>
+        <p>Com o <strong>melhor software para indústria de cartonagem</strong>, sua fábrica ganha velocidade na geração de orçamentos (cálculo automático considerando chapa, impressão, acabamento e custos indiretos), precisão no controle de produção (PCP com sequenciamento por máquina), eficiência na gestão de compras (cotações automáticas e controle de estoque mínimo) e controle total do financeiro e fiscal.</p>
+        <h3>Automação inteligente para sua fábrica</h3>
+        <p>O software KRP automatiza tarefas repetitivas que consomem tempo e geram erros: geração de ordens de produção a partir de pedidos, cálculo de necessidade de matéria-prima, emissão de notas fiscais, geração de SPED, conciliação bancária e muito mais. Sua equipe foca no que importa — produzir e vender — enquanto o sistema cuida do resto.</p>
+        <FeaturesList />
+        <p>{regionContent}</p>
+      </>
+    ),
+  },
+  "sistema-industria-embalagens": {
+    heading: "Sistema para Indústria de Embalagens — ERP Completo para Fabricantes",
+    content: (
+      <>
+        <p>O <strong>sistema para indústria de embalagens</strong> KRP atende fabricantes de todos os tipos de embalagens de papelão ondulado: caixas RSC, caixas troqueladas, caixas com impressão, displays, bandejas, divisórias, embalagens para e-commerce, embalagens industriais, embalagens para alimentos e muito mais.</p>
+        <p>Nosso <strong>sistema para indústria de embalagens</strong> é a escolha de fábricas que buscam um ERP que realmente entenda o processo de fabricação de embalagens de papelão. Com cálculo de custo que considera composição de chapa, gramatura, tipo de onda, impressão, acabamento e custos indiretos, o KRP oferece a precisão que sua indústria precisa.</p>
+        <FeaturesList extras={["Suporte a todos os tipos de embalagens de papelão ondulado", "Biblioteca de modelos FEFCO/ESBO integrada"]} />
+        <p>{regionContent}</p>
+      </>
+    ),
+  },
+  "erp-industria-embalagens": {
+    heading: "ERP para Indústria de Embalagens — Gestão Completa e Especializada",
+    content: (
+      <>
+        <p>O <strong>ERP para indústria de embalagens</strong> KRP da BC3 Tecnologia é a solução definitiva para fabricantes de embalagens de papelão ondulado que buscam eficiência operacional, controle de custos e competitividade no mercado. Com módulos integrados que cobrem toda a operação industrial, o KRP transforma a gestão da sua fábrica.</p>
+        <p>Escolher o <strong>ERP certo para sua indústria de embalagens</strong> é fundamental para o sucesso do negócio. O KRP já é utilizado por mais de 25 fabricantes de embalagens em todo o Brasil, comprovando sua eficácia e confiabilidade no setor de papelão ondulado.</p>
+        <FeaturesList />
+        <p>{regionContent}</p>
+      </>
+    ),
+  },
+  // ===== FEATURE ROUTES =====
+  "sistema-controle-producao-cartonagem": {
+    heading: "Sistema de Controle de Produção para Cartonagem — Monitoramento em Tempo Real",
+    content: (
+      <>
+        <p>O <strong>sistema de controle de produção para cartonagem</strong> do ERP KRP oferece monitoramento em tempo real de todas as etapas do processo fabril: ondulação, impressão flexográfica, corte e vinco, colagem, grampeamento, amarração e paletização. Cada operação é rastreada, medida e registrada automaticamente.</p>
+        <p>Com nosso <strong>sistema de controle de produção</strong>, gestores de fábricas de papelão ondulado acompanham em tempo real: status de cada ordem de produção, eficiência de cada máquina (OEE), tempos de setup e produção, quantidade produzida vs. programada, índice de refugo e retrabalho, e cumprimento de prazos de entrega.</p>
+        <h3>Funcionalidades do controle de produção</h3>
+        <p>O módulo de produção do KRP inclui: abertura e fechamento de ordens de produção, sequenciamento automático por máquina, apontamento de produção via tablet no chão de fábrica, registro de paradas (programadas e não programadas), controle de refugo com motivos, rastreabilidade de matéria-prima por lote, relatórios de eficiência por turno e comparativo de produção período a período.</p>
+        <FeaturesList extras={["Apontamento de produção via tablet no chão de fábrica", "Controle de OEE por máquina, turno e operador", "Rastreabilidade completa de matéria-prima até produto acabado"]} />
+        <p>{regionContent}</p>
+      </>
+    ),
+  },
+  "sistema-estoque-papelao": {
+    heading: "Sistema de Estoque para Papelão — Controle de Chapas, Bobinas e Insumos",
+    content: (
+      <>
+        <p>O <strong>sistema de estoque para papelão</strong> do ERP KRP oferece controle completo de todos os materiais da sua fábrica de cartonagem: bobinas de papel, chapas de papelão ondulado, tintas, clichês, facas, cola, grampos, fitas e demais insumos. Cada movimentação é registrada automaticamente, garantindo acuracidade e rastreabilidade total.</p>
+        <p>Com nosso <strong>sistema de estoque para papelão</strong>, você sabe exatamente quanto tem de cada material, onde está armazenado, qual o custo médio, quando será necessário recomprar e quais fornecedores oferecem as melhores condições. Alertas automáticos de estoque mínimo garantem que sua produção nunca pare por falta de material.</p>
+        <h3>Gestão inteligente de estoque</h3>
+        <p>O KRP gerencia estoque por tipo de material: bobinas (por gramatura, largura e fornecedor), chapas (por composição, dimensão e tipo de onda), produtos acabados (por cliente e especificação), tintas (por cor e fornecedor) e ferramental (clichês e facas por produto). Cada categoria tem seus próprios parâmetros de controle.</p>
+        <FeaturesList extras={["Estoque por composição de chapa e dimensão", "Alertas automáticos de estoque mínimo", "Inventário rotativo com conferência por setor"]} />
+        <p>{regionContent}</p>
+      </>
+    ),
+  },
+  "software-orcamento-caixas": {
+    heading: "Software de Orçamento para Caixas — Propostas Comerciais em Segundos",
+    content: (
+      <>
+        <p>O <strong>software de orçamento para caixas</strong> do ERP KRP permite que sua equipe comercial gere propostas completas e precisas em segundos. Basta informar as dimensões da caixa, composição da chapa, tipo de impressão, número de cores e acabamento — o sistema calcula automaticamente o custo e sugere o preço de venda com base na margem desejada.</p>
+        <p>Com nosso <strong>software de orçamento para caixas</strong>, sua indústria de cartonagem ganha agilidade competitiva. Enquanto concorrentes levam horas ou dias para responder uma cotação, você responde em minutos com precisão total no custo e no preço. Isso significa mais vendas, melhores margens e clientes mais satisfeitos.</p>
+        <h3>Como funciona o orçamento automático</h3>
+        <p>O módulo de orçamento do KRP considera: custo do papel por gramatura e fornecedor, consumo de adesivo, custo de impressão por cor, custo de acabamento (corte, vinco, colagem, grampeamento), mão de obra direta, custos indiretos de fabricação, despesas comerciais e administrativas, impostos (ICMS, IPI, PIS, COFINS) e margem de lucro desejada. Tudo atualizado em tempo real.</p>
+        <FeaturesList extras={["Cálculo automático de custo em menos de 10 segundos", "Simulação de cenários com diferentes composições", "Envio de proposta por e-mail diretamente do sistema"]} />
+        <p>{regionContent}</p>
+      </>
+    ),
+  },
+  "sistema-financeiro-cartonagem": {
+    heading: "Sistema Financeiro para Cartonagem — Controle Total das Finanças da sua Fábrica",
+    content: (
+      <>
+        <p>O <strong>sistema financeiro para cartonagem</strong> do ERP KRP oferece controle completo das finanças da sua indústria de papelão ondulado. Contas a pagar, contas a receber, fluxo de caixa, conciliação bancária, DRE, centro de custos, comissões de vendedores e muito mais — tudo integrado à operação comercial e produtiva da fábrica.</p>
+        <p>Com nosso <strong>sistema financeiro para cartonagem</strong>, cada venda gera automaticamente os títulos a receber, cada compra gera os títulos a pagar, e o fluxo de caixa é atualizado em tempo real. Você tem visão clara e imediata da saúde financeira da sua empresa.</p>
+        <h3>Funcionalidades financeiras</h3>
+        <p>O módulo financeiro do KRP inclui: contas a pagar com aprovação multinível, contas a receber com cobrança automatizada, emissão de boletos (integração bancária), conciliação bancária automática, fluxo de caixa realizado e projetado, DRE por período e centro de custo, controle de comissões de vendedores, rateio de custos por centro, relatórios financeiros gerenciais e integração total com o módulo fiscal.</p>
+        <FeaturesList extras={["Fluxo de caixa projetado com base em pedidos e compras", "Conciliação bancária automática via OFX/CNAB", "DRE gerencial por período e centro de custo"]} />
+        <p>{regionContent}</p>
+      </>
+    ),
+  },
+  // ===== EDUCATIONAL ROUTES =====
+  "calculo-custo-cartonagem": {
+    heading: "Cálculo de Custo na Cartonagem — Guia Completo para Indústrias de Papelão Ondulado",
+    content: (
+      <>
+        <p>O <strong>cálculo de custo na cartonagem</strong> é um dos processos mais críticos para a rentabilidade de qualquer fábrica de caixas de papelão ondulado. Calcular incorretamente o custo de uma caixa pode significar vender abaixo do preço, comprometendo margens, ou acima do mercado, perdendo vendas. O ERP KRP da BC3 Tecnologia automatiza completamente esse cálculo com a precisão que sua indústria precisa.</p>
+        <h3>Como calcular o custo de uma caixa de papelão ondulado?</h3>
+        <p>O cálculo de custo envolve diversas variáveis: <strong>matéria-prima</strong> (custo do papel miolo, capa interna e capa externa, considerando gramatura e fornecedor), <strong>composição da chapa</strong> (tipo de onda — B, C, BC, E — e quantidade de camadas), <strong>dimensões</strong> (comprimento, largura, altura e área total da chapa), <strong>impressão</strong> (número de cores, cobertura, custo de clichês), <strong>acabamento</strong> (corte e vinco, colagem, grampeamento, amarração), <strong>mão de obra</strong> (tempo de cada operação multiplicado pelo custo/hora) e <strong>custos indiretos</strong> (energia, depreciação, manutenção, aluguel rateado).</p>
+        <h3>Fórmula básica do cálculo</h3>
+        <p>Custo Total = Matéria-prima + Mão de Obra Direta + Custos Indiretos de Fabricação + Despesas Comerciais + Despesas Administrativas + Impostos. O ERP KRP automatiza cada uma dessas etapas, buscando custos atualizados de materiais, tempos padrão de produção e rateios configurados, gerando o custo real em segundos.</p>
+        <h3>Por que automatizar o cálculo de custo?</h3>
+        <p>Muitas cartonagens ainda calculam custos em planilhas Excel, o que gera erros, inconsistências e retrabalho. Com o KRP, o cálculo é automático, preciso e atualizado em tempo real conforme variam os preços de matéria-prima. Isso garante que cada orçamento reflita o custo real do momento.</p>
+        <FeaturesList extras={["Cálculo automático em menos de 10 segundos", "Atualização em tempo real conforme variação de custos", "Comparativo custo orçado vs. custo realizado"]} />
+        <p>{regionContent}</p>
+      </>
+    ),
+  },
+  "calculo-custo-caixa-papelao": {
+    heading: "Cálculo de Custo de Caixa de Papelão — Como Precificar Corretamente",
+    content: (
+      <>
+        <p>Aprender a fazer o <strong>cálculo de custo de caixa de papelão</strong> corretamente é essencial para a saúde financeira da sua indústria de cartonagem. Uma precificação errada — para mais ou para menos — impacta diretamente na competitividade e na lucratividade do negócio. O ERP KRP da BC3 Tecnologia automatiza esse processo com precisão absoluta.</p>
+        <h3>Variáveis do cálculo de custo</h3>
+        <p>Para calcular o custo de uma caixa de papelão, considere: (1) <strong>Papel</strong> — custo por quilo de cada componente (capa externa, miolo, capa interna) multiplicado pela gramatura e área; (2) <strong>Cola/Adesivo</strong> — consumo por m² de chapa; (3) <strong>Impressão</strong> — custo por cor considerando setup, velocidade e consumo de tinta; (4) <strong>Acabamento</strong> — custo do corte, vinco, dobra, colagem ou grampeamento; (5) <strong>Mão de obra</strong> — tempo por operação x custo/hora; (6) <strong>Custos fixos</strong> — rateio de aluguel, energia, depreciação, manutenção.</p>
+        <h3>Exemplo prático de cálculo</h3>
+        <p>Para uma caixa RSC de 400x300x200mm em onda C (gramatura 480g/m²), com impressão de 2 cores: o KRP calcula automaticamente a área da chapa (0,84 m²), o peso da chapa (0,403 kg), o custo do papel com base no preço atual do fornecedor, adiciona os custos de impressão, acabamento, mão de obra e rateios, e apresenta o custo final unitário em segundos. Esse mesmo cálculo em planilha levaria minutos e estaria sujeito a erros.</p>
+        <FeaturesList />
+        <p>{regionContent}</p>
+      </>
+    ),
+  },
+  "como-calcular-caixa-papelao": {
+    heading: "Como Calcular Caixa de Papelão — Guia Passo a Passo para Cartonagens",
+    content: (
+      <>
+        <p>Você sabe <strong>como calcular caixa de papelão</strong> corretamente? Este guia completo explica passo a passo todo o processo de cálculo — das dimensões internas até o preço final de venda — e mostra como o ERP KRP da BC3 Tecnologia automatiza cada etapa com precisão.</p>
+        <h3>Passo 1: Definir as dimensões</h3>
+        <p>O primeiro passo para <strong>calcular uma caixa de papelão</strong> é definir as dimensões internas (comprimento x largura x altura). A partir dessas medidas, o sistema calcula automaticamente as dimensões da chapa plana necessária, considerando as abas, sobreposições e tolerâncias de fabricação.</p>
+        <h3>Passo 2: Escolher a composição da chapa</h3>
+        <p>Defina o tipo de onda (B, C, BC, E, F), a gramatura do papel miolo, capa interna e capa externa. Cada combinação resulta em um custo de matéria-prima diferente. O KRP possui tabelas de composição configuráveis que facilitam essa escolha.</p>
+        <h3>Passo 3: Definir impressão e acabamento</h3>
+        <p>Especifique o número de cores de impressão, tipo de acabamento (corte e vinco, colagem, grampeamento) e embalagem final (amarração, paletização). Cada item adiciona custos que são calculados automaticamente pelo sistema.</p>
+        <h3>Passo 4: Calcular o custo total</h3>
+        <p>O KRP soma todos os custos: matéria-prima, mão de obra, custos indiretos, despesas comerciais e impostos. Em seguida, aplica a margem desejada e apresenta o preço de venda sugerido. Todo o processo leva menos de 10 segundos.</p>
+        <FeaturesList />
+        <p>{regionContent}</p>
+      </>
+    ),
+  },
+  "como-gerenciar-cartonagem": {
+    heading: "Como Gerenciar uma Cartonagem — Guia de Gestão Industrial Completo",
+    content: (
+      <>
+        <p>Saber <strong>como gerenciar uma cartonagem</strong> de forma eficiente é o que separa fábricas lucrativas daquelas que apenas sobrevivem. A gestão de uma indústria de papelão ondulado envolve múltiplos desafios simultâneos: controle de custos, eficiência produtiva, gestão comercial, financeiro, fiscal e logística. O ERP KRP da BC3 Tecnologia unifica todos esses processos em uma única plataforma.</p>
+        <h3>Pilares da gestão de uma cartonagem</h3>
+        <p><strong>1. Gestão Comercial:</strong> Orçamentos rápidos e precisos, follow-up de propostas, gestão de carteira de clientes, análise de rentabilidade por cliente e produto. O KRP automatiza todo o ciclo comercial.</p>
+        <p><strong>2. Gestão de Produção:</strong> Planejamento e controle de produção (PCP), sequenciamento de máquinas, controle de eficiência (OEE), gestão de paradas e manutenção. Com o KRP, você tem visão em tempo real do chão de fábrica.</p>
+        <p><strong>3. Gestão de Custos:</strong> Cálculo preciso de custo por produto, análise de margem de contribuição, controle de desperdícios. O KRP mostra exatamente quanto custa cada caixa produzida.</p>
+        <p><strong>4. Gestão Financeira:</strong> Fluxo de caixa, contas a pagar e receber, conciliação bancária, DRE. Visão completa da saúde financeira da empresa.</p>
+        <p><strong>5. Gestão Fiscal:</strong> NF-e, SPED, MDF-e, CT-e — todas as obrigações fiscais automatizadas e integradas ao ERP.</p>
+        <FeaturesList />
+        <p>{regionContent}</p>
+      </>
+    ),
+  },
+  "controle-producao-cartonagem": {
+    heading: "Controle de Produção para Cartonagem — Eficiência e Rastreabilidade Total",
+    content: (
+      <>
+        <p>O <strong>controle de produção para cartonagem</strong> é fundamental para garantir eficiência, qualidade e cumprimento de prazos na fabricação de caixas de papelão ondulado. O ERP KRP da BC3 Tecnologia oferece o módulo de controle de produção mais completo do mercado, com apontamento em tempo real, rastreabilidade completa e indicadores de performance para cada máquina e operação.</p>
+        <p>Com nosso sistema de <strong>controle de produção para cartonagem</strong>, você sabe exatamente: o que está sendo produzido neste momento, qual a eficiência de cada máquina, quanto já foi produzido de cada pedido, onde estão os gargalos, qual o índice de refugo e se os prazos de entrega serão cumpridos.</p>
+        <h3>Controle por etapa de produção</h3>
+        <p>O KRP controla cada etapa do processo produtivo da cartonagem: ondulação (para fábricas integradas), corte de chapas, impressão flexográfica (setup, velocidade, consumo de tinta), corte e vinco (troca de facas, setup), acabamento (colagem, grampeamento), e expedição (amarração, paletização, carregamento).</p>
+        <FeaturesList extras={["Painel de controle de produção em tempo real", "Alertas automáticos para atrasos e paradas", "Relatórios de produtividade por turno e operador"]} />
+        <p>{regionContent}</p>
+      </>
+    ),
+  },
+  "gestao-producao-cartonagem": {
+    heading: "Gestão de Produção para Cartonagem — PCP Integrado ao ERP",
+    content: (
+      <>
+        <p>A <strong>gestão de produção para cartonagem</strong> eficiente exige planejamento, controle e análise de cada etapa do processo fabril. O ERP KRP da BC3 Tecnologia integra PCP (Planejamento e Controle de Produção) diretamente ao sistema de gestão, permitindo que sua fábrica de papelão ondulado opere com máxima eficiência e mínimo desperdício.</p>
+        <p>Com a <strong>gestão de produção para cartonagem</strong> do KRP, pedidos de venda são convertidos automaticamente em ordens de produção, que são sequenciadas por máquina considerando prioridade, tipo de chapa e cores de impressão. O resultado: menos trocas de setup, mais produtividade e cumprimento de prazos.</p>
+        <h3>PCP inteligente para cartonagem</h3>
+        <p>O módulo de PCP do KRP oferece: programação automática de produção por máquina, Kanban digital para visualização do status, cálculo de capacidade produtiva, gestão de carga-máquina, previsão de entrega por pedido, planejamento de necessidade de materiais (MRP) e análise de capacidade vs. demanda.</p>
+        <FeaturesList extras={["Sequenciamento automático de produção", "Kanban digital no chão de fábrica", "MRP integrado para gestão de materiais"]} />
+        <p>{regionContent}</p>
+      </>
+    ),
+  },
+  "controle-industria-papelao": {
+    heading: "Controle de Indústria de Papelão — ERP Especializado para Fábricas",
+    content: (
+      <>
+        <p>O <strong>controle de indústria de papelão</strong> requer um sistema que entenda as particularidades do setor de papelão ondulado. O ERP KRP da BC3 Tecnologia oferece controle completo para fábricas de todos os portes: desde pequenas cartonagens até grandes indústrias com onduladeiras integradas e múltiplas linhas de produção.</p>
+        <p>Com nosso sistema de <strong>controle de indústria de papelão</strong>, você monitora em tempo real: produção (quantidade, eficiência, refugo), estoque (chapas, bobinas, insumos, produtos acabados), vendas (pedidos, faturamento, inadimplência), compras (pedidos, entregas, preços), financeiro (fluxo de caixa, DRE) e fiscal (NF-e, SPED). Tudo em dashboards intuitivos e personalizáveis.</p>
+        <FeaturesList />
+        <p>{regionContent}</p>
+      </>
+    ),
+  },
+  "como-funciona-pcp-cartonagem": {
+    heading: "Como Funciona o PCP na Cartonagem — Guia Completo de Planejamento de Produção",
+    content: (
+      <>
+        <p>Entender <strong>como funciona o PCP na cartonagem</strong> é essencial para otimizar a produção da sua fábrica de papelão ondulado. O PCP (Planejamento e Controle de Produção) na cartonagem tem particularidades que exigem um sistema especializado — e o ERP KRP da BC3 Tecnologia é a referência nesse segmento.</p>
+        <h3>O que é PCP na cartonagem?</h3>
+        <p>O PCP na cartonagem é o processo de planejar, programar e controlar a produção de caixas de papelão ondulado. Envolve: definir a sequência de produção, alocar pedidos às máquinas, calcular a necessidade de materiais, programar setups, determinar prazos de entrega e monitorar a execução em tempo real.</p>
+        <h3>Etapas do PCP na cartonagem</h3>
+        <p><strong>1. Planejamento:</strong> Análise da carteira de pedidos, capacidade produtiva e disponibilidade de materiais. <strong>2. Programação:</strong> Sequenciamento de ordens por máquina, otimizando trocas de setup (agrupando por tipo de chapa e cor). <strong>3. Liberação:</strong> Emissão de ordens de produção com toda a documentação necessária. <strong>4. Controle:</strong> Acompanhamento em tempo real da execução, identificação de desvios e ações corretivas. <strong>5. Análise:</strong> Relatórios de eficiência, produtividade e cumprimento de prazos.</p>
+        <h3>PCP automatizado com o ERP KRP</h3>
+        <p>O KRP automatiza todas as etapas do PCP: converte pedidos em ordens de produção, calcula necessidade de materiais (MRP), sequencia a produção por máquina, gera o Kanban digital, registra apontamentos em tempo real e gera relatórios de eficiência.</p>
+        <FeaturesList extras={["PCP automatizado integrado ao ERP", "Sequenciamento inteligente por tipo de chapa e cor", "Relatórios de eficiência OEE por máquina"]} />
+        <p>{regionContent}</p>
+      </>
+    ),
+  },
+  "gestao-industrial-embalagens": {
+    heading: "Gestão Industrial de Embalagens — ERP para Fabricantes de Embalagens de Papelão",
+    content: (
+      <>
+        <p>A <strong>gestão industrial de embalagens</strong> de papelão ondulado exige um sistema que integre todas as áreas da fábrica: comercial, compras, produção, PCP, financeiro, fiscal e expedição. O ERP KRP da BC3 Tecnologia é a solução mais completa e especializada do mercado para fabricantes de embalagens que buscam eficiência operacional e competitividade.</p>
+        <p>Com nossa solução de <strong>gestão industrial de embalagens</strong>, sua fábrica opera de forma integrada e inteligente. Cada departamento trabalha com as mesmas informações, em tempo real, eliminando redundâncias, erros e retrabalho. O resultado: mais produtividade, menores custos e maior lucratividade.</p>
+        <h3>Benefícios da gestão industrial integrada</h3>
+        <p>Indústrias de embalagens que implementaram o ERP KRP relatam: redução de 30% no tempo de geração de orçamentos, diminuição de 20% no desperdício de matéria-prima, aumento de 25% na produtividade do chão de fábrica, melhoria de 40% no controle financeiro e eliminação de 90% dos erros em documentos fiscais.</p>
+        <FeaturesList extras={["Gestão integrada de toda a cadeia produtiva de embalagens", "Resultados comprovados por mais de 25 fábricas no Brasil"]} />
+        <p>{regionContent}</p>
+      </>
+    ),
+  },
+  // ===== GEOGRAPHIC =====
+  "erp-cartonagem-brasil": {
+    heading: "ERP para Cartonagem em Todo o Brasil — Atendimento Nacional BC3 Tecnologia",
+    content: (
+      <>
+        <p>O <strong>ERP para cartonagem no Brasil</strong> da BC3 Tecnologia atende indústrias de papelão ondulado em todos os 26 estados e no Distrito Federal. Com sistema 100% na nuvem e equipe de consultores que trabalha remotamente e presencialmente, garantimos implantação e suporte de qualidade independentemente da localização da sua fábrica.</p>
+        <h3>Presença em todas as regiões</h3>
+        <p><strong>Sudeste:</strong> São Paulo (SP), Minas Gerais (MG), Rio de Janeiro (RJ), Espírito Santo (ES) — onde se concentra o maior número de cartonagens do país. Atendemos na capital e interior de cada estado.</p>
+        <p><strong>Sul:</strong> Paraná (PR), Santa Catarina (SC), Rio Grande do Sul (RS) — região com forte polo industrial de embalagens. Clientes em Curitiba, Joinville, Blumenau, Porto Alegre, Caxias do Sul e região.</p>
+        <p><strong>Centro-Oeste:</strong> Goiás (GO), Mato Grosso (MT), Mato Grosso do Sul (MS), Distrito Federal (DF) — região em crescimento acelerado no setor de embalagens.</p>
+        <p><strong>Nordeste:</strong> Bahia (BA), Pernambuco (PE), Ceará (CE), Paraíba (PB), Rio Grande do Norte (RN), Maranhão (MA), Piauí (PI), Alagoas (AL), Sergipe (SE) — atendemos todas as capitais e polos industriais.</p>
+        <p><strong>Norte:</strong> Amazonas (AM), Pará (PA), Tocantins (TO), Rondônia (RO), Acre (AC), Amapá (AP), Roraima (RR) — sistema na nuvem garante acesso mesmo em localizações remotas.</p>
+        <h3>Por que escolher um ERP na nuvem?</h3>
+        <p>O ERP KRP funciona 100% na nuvem, o que significa que sua fábrica pode estar em qualquer cidade do Brasil e ter acesso completo ao sistema. Sem necessidade de servidores locais, sem instalação de software, sem preocupação com backup. Apenas internet e um navegador.</p>
+        <FeaturesList extras={["Atendimento em todos os 26 estados + DF", "Implantação remota ou presencial conforme necessidade", "Suporte técnico em horário comercial estendido"]} />
+        <p>Mais de <strong>25 indústrias de cartonagem em todo o Brasil</strong> já utilizam o ERP KRP. Seja a próxima. Entre em contato e solicite uma demonstração gratuita do melhor ERP para cartonagem do país.</p>
+      </>
+    ),
+  },
 };
 
 const SeoContent = ({ slug }: { slug: string }) => {

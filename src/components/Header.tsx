@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Menu,
@@ -15,6 +16,9 @@ import { useTheme } from "@/hooks/use-theme";
 
 const Header = () => {
   const { theme, toggleTheme } = useTheme();
+  const location = useLocation();
+  const navigate = useNavigate();
+  const isHome = location.pathname === "/";
 
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -37,7 +41,6 @@ const Header = () => {
 
     handleScroll();
     window.addEventListener("scroll", handleScroll, { passive: true });
-    // captura também (alguns layouts mudam o elemento rolável)
     document.addEventListener("scroll", handleScroll, { passive: true, capture: true });
 
     return () => {
@@ -83,6 +86,27 @@ const Header = () => {
     { name: "Contato", href: "#contato" },
   ];
 
+  const handleNavClick = (e: React.MouseEvent, href: string) => {
+    e.preventDefault();
+    if (!isHome) {
+      // Navigate to home first, then scroll to section
+      navigate("/");
+      if (href !== "#home") {
+        setTimeout(() => {
+          const el = document.querySelector(href);
+          el?.scrollIntoView({ behavior: "smooth" });
+        }, 300);
+      }
+    } else {
+      if (href === "#home") {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      } else {
+        const el = document.querySelector(href);
+        el?.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
+
   const closeMobile = () => setIsMobileMenuOpen(false);
 
   return (
@@ -96,7 +120,7 @@ const Header = () => {
       <div className="container mx-auto px-3 sm:px-4 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="#home" className="flex items-center gap-3 shrink-0">
+          <a href="/" onClick={(e) => handleNavClick(e, "#home")} className="flex items-center gap-3 shrink-0">
             <img
               src={logo}
               alt="BC3 Tecnologia"
@@ -114,6 +138,7 @@ const Header = () => {
                 <a
                   key={link.name}
                   href={link.href}
+                  onClick={(e) => handleNavClick(e, link.href)}
                   className="text-sm font-bold text-secondary-foreground/90 hover:text-primary transition-colors duration-200"
                 >
                   {link.name}
@@ -292,7 +317,7 @@ const Header = () => {
                     <a
                       key={link.name}
                       href={link.href}
-                      onClick={closeMobile}
+                      onClick={(e) => { closeMobile(); handleNavClick(e, link.href); }}
                       className="text-lg font-bold text-secondary-foreground/90 hover:text-primary transition-colors border-b border-secondary-foreground/10 pb-3 pt-3"
                     >
                       {link.name}

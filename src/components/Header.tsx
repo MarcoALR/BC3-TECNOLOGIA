@@ -120,7 +120,7 @@ const Header = () => {
       <div className="container mx-auto px-3 sm:px-4 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="#home" className="flex items-center gap-3 shrink-0">
+          <a href="/" onClick={(e) => handleNavClick(e, "#home")} className="flex items-center gap-3 shrink-0">
             <img
               src={logo}
               alt="BC3 Tecnologia"
@@ -317,7 +317,7 @@ const Header = () => {
                     <a
                       key={link.name}
                       href={link.href}
-                      onClick={closeMobile}
+                      onClick={(e) => { closeMobile(); handleNavClick(e, link.href); }}
                       className="text-lg font-bold text-secondary-foreground/90 hover:text-primary transition-colors border-b border-secondary-foreground/10 pb-3 pt-3"
                     >
                       {link.name}

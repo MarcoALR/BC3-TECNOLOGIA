@@ -52,12 +52,13 @@ const PageLayout = ({ title, description, canonical, scrollTo, seoHeading, seoSl
         <meta name="twitter:image" content="https://bc3.com.br/logos/logo.png" />
         <link rel="canonical" href={canonical} />
       </Helmet>
-      <div className="min-h-screen">
+      <div className="min-h-screen" data-react-root>
         <Header />
         <Hero />
         <About />
         <Modules />
         <Integrations />
+        <DeploymentOptions />
         <Clients />
         <Contact />
         <Footer seoHeading={seoHeading} seoSlug={seoSlug} />

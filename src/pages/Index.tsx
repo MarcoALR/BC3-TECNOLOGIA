@@ -61,7 +61,7 @@ const Index = () => {
           })}
         </script>
       </Helmet>
-      <div className="min-h-screen">
+      <div className="min-h-screen" data-react-root>
         <Header />
         <Hero />
         <About />

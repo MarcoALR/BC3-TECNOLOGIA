@@ -7,6 +7,7 @@ import Integrations from "@/components/Integrations";
 import Clients from "@/components/Clients";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import DeploymentOptions from "@/components/DeploymentOptions";
 import { useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import SeoContent from "@/components/SeoContent";

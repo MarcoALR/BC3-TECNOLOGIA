@@ -437,13 +437,14 @@ const SeoRedirect = () => {
           {JSON.stringify(generateJsonLd(slug, meta.title, meta.description))}
         </script>
       </Helmet>
-      <div className="min-h-screen">
+      <div className="min-h-screen" data-react-root>
         <Header />
         <Hero />
         <SeoContent slug={slug} />
         <About />
         <Modules />
         <Integrations />
+        <DeploymentOptions />
         <Clients />
         <Contact />
         <Footer seoHeading={meta.h2} seoSlug={slug} />

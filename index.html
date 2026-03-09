@@ -80,17 +80,12 @@
 
 <body>
 
-<div id="root">
+<div id="root"></div>
 
-<!-- Conteúdo visível para crawlers antes do React hidratar -->
-<div id="seo-fallback" style="max-width:960px;margin:0 auto;padding:40px 20px;font-family:system-ui,sans-serif;color:#333;">
+<!-- SEO fallback: hidden by default, shown only when JS is disabled (noscript) -->
+<div id="seo-fallback" style="display:none;max-width:960px;margin:0 auto;padding:40px 20px;font-family:system-ui,sans-serif;color:#333;background:#fff;">
 <h1>ERP para Cartonagem | Sistema para Papelão Ondulado - BC3 Tecnologia</h1>
-
-<p>
-A BC3 Tecnologia oferece o <strong>melhor ERP para cartonagem e papelão ondulado do Brasil</strong>. 
-O sistema ERP KRP é a solução mais completa e especializada do mercado para indústrias de caixas de papelão ondulado e embalagens.
-</p>
-
+<p>A BC3 Tecnologia oferece o <strong>melhor ERP para cartonagem e papelão ondulado do Brasil</strong>. O sistema ERP KRP é a solução mais completa e especializada do mercado para indústrias de caixas de papelão ondulado e embalagens.</p>
 <h2>Módulos do ERP KRP</h2>
 <ul>
 <li><strong>Comercial</strong> — Orçamentos, pedidos, follow-up e comissões</li>
@@ -101,42 +96,18 @@ O sistema ERP KRP é a solução mais completa e especializada do mercado para i
 <li><strong>Estoque</strong> — Controle de chapas, bobinas, insumos e produtos acabados</li>
 <li><strong>Relatórios</strong> — Dashboards, KPIs e relatórios gerenciais em tempo real</li>
 </ul>
-
 <h2>Por que escolher o ERP KRP?</h2>
-<p>
-Mais de 25 indústrias de cartonagem em todo o Brasil já confiam no ERP KRP. 
-Sistema 100% na nuvem, sem necessidade de servidores locais. 
-Cálculo automático de custo de caixas de papelão ondulado considerando composição de chapas, gramatura, impressão e acabamento.
-</p>
-
+<p>Mais de 25 indústrias de cartonagem em todo o Brasil já confiam no ERP KRP. Sistema 100% na nuvem, sem necessidade de servidores locais.</p>
 <h2>Atendimento Nacional</h2>
-<p>
-Atendemos indústrias de cartonagem em São Paulo, Minas Gerais, Rio de Janeiro, Paraná, Santa Catarina, 
-Rio Grande do Sul, Goiás, Bahia, Pernambuco, Ceará e todos os estados do Brasil.
-</p>
-
+<p>Atendemos indústrias de cartonagem em São Paulo, Minas Gerais, Rio de Janeiro, Paraná, Santa Catarina, Rio Grande do Sul, Goiás, Bahia, Pernambuco, Ceará e todos os estados do Brasil.</p>
 <p><strong>Solicite uma demonstração gratuita:</strong> (32) 99985-1183 | contato@bc3.com.br</p>
-
 <nav>
-<a href="/">Home</a> | 
-<a href="/sobre">Sobre</a> | 
-<a href="/modulos">Módulos</a> | 
-<a href="/integracoes">Integrações</a> | 
-<a href="/clientes">Clientes</a> | 
-<a href="/contato">Contato</a>
+<a href="/">Home</a> | <a href="/sobre">Sobre</a> | <a href="/modulos">Módulos</a> | <a href="/integracoes">Integrações</a> | <a href="/clientes">Clientes</a> | <a href="/contato">Contato</a>
 </nav>
 </div>
 
-</div>
-
 <noscript>
-<div style="max-width:960px;margin:0 auto;padding:40px 20px;font-family:system-ui,sans-serif;">
-<h1>BC3 Tecnologia — ERP para Cartonagem e Papelão Ondulado</h1>
-<p>O melhor sistema ERP para indústrias de cartonagem do Brasil. Gerencie produção, vendas, compras, financeiro e fiscal em um único sistema integrado.</p>
-<p>Mais de 25 clientes em todo o Brasil. Sistema 100% na nuvem.</p>
-<p>Contato: (32) 99985-1183 | contato@bc3.com.br</p>
-<p><a href="https://bc3.com.br/">Visite nosso site</a></p>
-</div>
+<style>#seo-fallback{display:block!important}</style>
 </noscript>
 
 <script>
@@ -150,20 +121,6 @@ Rio Grande do Sul, Goiás, Bahia, Pernambuco, Ceará e todos os estados do Brasi
       }
     }
   })();
-  // Hide SEO fallback once React renders
-  var observer = new MutationObserver(function() {
-    var fallback = document.getElementById('seo-fallback');
-    if (fallback && document.querySelector('[data-react-root],.min-h-screen')) {
-      fallback.style.display = 'none';
-      observer.disconnect();
-    }
-  });
-  observer.observe(document.getElementById('root'), { childList: true, subtree: true });
-  // Fallback timeout
-  setTimeout(function() {
-    var fallback = document.getElementById('seo-fallback');
-    if (fallback) fallback.style.display = 'none';
-  }, 3000);
 </script>
 <script type="module" src="/src/main.tsx"></script>
 

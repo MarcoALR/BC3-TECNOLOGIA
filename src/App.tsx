@@ -1,48 +1,131 @@
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
+import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import WhatsAppFloat from "./components/WhatsAppFloat";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
 import Index from "./pages/Index";
-import Catalogo from "./pages/Catalogo";
-import Produto from "./pages/Produto";
-import CatalogoPdf from "./pages/CatalogoPdf";
-import MesaPersonalizada from "./pages/MesaPersonalizada";
-import Representantes from "./pages/Representantes";
-import Localizacao from "./pages/Localizacao";
-import Contato from "./pages/Contato";
 import NotFound from "./pages/NotFound";
+import SeoRedirect from "./pages/SeoRedirect";
+import Sobre from "./pages/Sobre";
+import Modulos from "./pages/Modulos";
+import Integracoes from "./pages/Integracoes";
+import Clientes from "./pages/Clientes";
+import Contato from "./pages/Contato";
 
 const queryClient = new QueryClient();
 
+const seoRoutes = [
+  "erp-cartonagem",
+  "sistema-cartonagem",
+  "software-cartonagem",
+  "sistema-papelao-ondulado",
+  "erp-industria-papelao",
+  "software-industria-embalagens",
+  "sistema-gestao-cartonagem",
+  "sistema-erp-cartonagem",
+  "programa-cartonagem",
+  "sistema-pcp-cartonagem",
+  "software-fabricante-caixa-papelao",
+  "sistema-controle-cartonagem",
+  "erp-cartonagem-nuvem",
+  "sistema-calculo-cartonagem",
+  "software-papelao-ondulado",
+  "sistema-industria-papelao-ondulado",
+  "gestao-industrial-cartonagem",
+  "sistema-caixa-papelao",
+  "erp-industria-grafica",
+  "software-industria-caixa-papelao",
+  "calculo-custo-caixa-papelao-ondulado",
+  "empresa-software-cartonagem",
+  "sistema-gerenciamento-cartonagem",
+  // New routes
+  "erp-embalagens-papelao",
+  "sistema-producao-cartonagem",
+  "software-gestao-embalagens",
+  "erp-fabrica-caixas",
+  "sistema-orcamento-cartonagem",
+  "software-nfe-cartonagem",
+  "erp-cartonagem-sao-paulo",
+  "erp-cartonagem-minas-gerais",
+  "erp-cartonagem-parana",
+  "erp-cartonagem-santa-catarina",
+  "erp-cartonagem-rio-grande-do-sul",
+  "erp-cartonagem-goias",
+  "erp-cartonagem-rio-de-janeiro",
+  "erp-cartonagem-bahia",
+  "erp-cartonagem-nordeste",
+  "sistema-flexografia-cartonagem",
+  "software-corte-vinco-cartonagem",
+  "erp-onduladeira",
+  "sistema-expedicao-cartonagem",
+  "software-estoque-papelao-ondulado",
+  "erp-cartonagem-pequena-empresa",
+  "sistema-fiscal-cartonagem",
+  "sistema-vendas-cartonagem",
+  "software-orcamento-caixa-papelao",
+  // Commercial routes
+  "preco-erp-cartonagem",
+  "preco-software-cartonagem",
+  "preco-sistema-cartonagem",
+  "valor-erp-cartonagem",
+  "valor-sistema-cartonagem",
+  "valor-software-cartonagem",
+  "orcamento-erp-cartonagem",
+  "orcamento-software-cartonagem",
+  // Company routes
+  "empresa-sistema-cartonagem",
+  "empresa-erp-cartonagem",
+  "empresa-especialista-cartonagem",
+  "empresa-sistema-industrial",
+  // Industrial solution routes
+  "solucao-erp-cartonagem",
+  "solucao-industria-cartonagem",
+  "software-industria-cartonagem",
+  "sistema-industria-embalagens",
+  "erp-industria-embalagens",
+  // Feature routes
+  "sistema-controle-producao-cartonagem",
+  "sistema-estoque-papelao",
+  "software-orcamento-caixas",
+  "sistema-financeiro-cartonagem",
+  // Educational routes
+  "calculo-custo-cartonagem",
+  "calculo-custo-caixa-papelao",
+  "como-calcular-caixa-papelao",
+  "como-gerenciar-cartonagem",
+  "controle-producao-cartonagem",
+  "gestao-producao-cartonagem",
+  "controle-industria-papelao",
+  "como-funciona-pcp-cartonagem",
+  "gestao-industrial-embalagens",
+  // Geographic
+  "erp-cartonagem-brasil",
+];
+
 const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Navbar />
-        <main className="min-h-screen">
+  <HelmetProvider>
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
-            <Route path="/catalogo" element={<Catalogo />} />
-            <Route path="/produto/:id" element={<Produto />} />
-            <Route path="/catalogo-pdf" element={<CatalogoPdf />} />
-            <Route path="/mesa-personalizada" element={<MesaPersonalizada />} />
-            <Route path="/representantes" element={<Representantes />} />
-            <Route path="/localizacao" element={<Localizacao />} />
+            <Route path="/sobre" element={<Sobre />} />
+            <Route path="/modulos" element={<Modulos />} />
+            <Route path="/integracoes" element={<Integracoes />} />
+            <Route path="/clientes" element={<Clientes />} />
             <Route path="/contato" element={<Contato />} />
+            {seoRoutes.map((route) => (
+              <Route key={route} path={`/${route}`} element={<SeoRedirect />} />
+            ))}
             <Route path="*" element={<NotFound />} />
           </Routes>
-        </main>
-        <Footer />
-        <WhatsAppFloat />
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
+        </BrowserRouter>
+      </TooltipProvider>
+    </QueryClientProvider>
+  </HelmetProvider>
 );
 
 export default App;

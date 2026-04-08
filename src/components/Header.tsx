@@ -12,6 +12,9 @@ import {
   Moon,
 } from "lucide-react";
 import logo from "@/assets/logo.png";
+import iconAnydesk from "@/assets/icon-anydesk.png";
+import iconWhatsapp from "@/assets/icon-whatsapp.png";
+import iconRdp from "@/assets/icon-rdp.png";
 import { useTheme } from "@/hooks/use-theme";
 
 const Header = () => {
@@ -196,8 +199,8 @@ const Header = () => {
                       rel="noopener noreferrer"
                       className="flex items-center gap-3 px-4 py-4 text-sm font-semibold hover:bg-secondary/50 rounded-xl transition-all group"
                     >
-                      <div className="w-8 h-8 rounded-lg bg-red-500/20 flex items-center justify-center text-red-400 group-hover:bg-red-500 group-hover:text-white transition-colors">
-                        <Download className="w-4 h-4" />
+                      <div className="w-8 h-8 rounded-lg bg-red-500/20 flex items-center justify-center overflow-hidden group-hover:bg-red-500/30 transition-colors">
+                        <img src={iconAnydesk} alt="AnyDesk" className="w-6 h-6 object-contain" />
                       </div>
                       <div>
                         <p className="text-secondary-foreground font-bold">
@@ -212,13 +215,33 @@ const Header = () => {
                     <div className="my-1 border-t border-secondary-foreground/10" />
 
                     <a
+                      href="/Sistema_BC3.rdp"
+                      download="Sistema_BC3.rdp"
+                      className="flex items-center gap-3 px-4 py-4 text-sm font-semibold hover:bg-secondary/50 rounded-xl transition-all group"
+                    >
+                      <div className="w-8 h-8 rounded-lg bg-blue-500/20 flex items-center justify-center overflow-hidden group-hover:bg-blue-500/30 transition-colors">
+                        <img src={iconRdp} alt="RDP" className="w-6 h-6 object-contain" />
+                      </div>
+                      <div>
+                        <p className="text-secondary-foreground font-bold">
+                          Sistema BC3 (RDP)
+                        </p>
+                        <p className="text-[10px] text-secondary-foreground/50 font-normal italic">
+                          Acesso remoto ao sistema
+                        </p>
+                      </div>
+                    </a>
+
+                    <div className="my-1 border-t border-secondary-foreground/10" />
+
+                    <a
                       href="https://wa.me/5532999851183?text=Olá! Preciso de suporte técnico."
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-3 px-4 py-4 text-sm font-semibold hover:bg-secondary/50 rounded-xl transition-all group"
                     >
-                      <div className="w-8 h-8 rounded-lg bg-green-500/20 flex items-center justify-center text-green-400 group-hover:bg-green-500 group-hover:text-white transition-colors">
-                        <MessageCircle className="w-4 h-4" />
+                      <div className="w-8 h-8 rounded-lg bg-green-500/20 flex items-center justify-center overflow-hidden group-hover:bg-green-500/30 transition-colors">
+                        <img src={iconWhatsapp} alt="WhatsApp" className="w-6 h-6 object-contain" />
                       </div>
                       <div>
                         <p className="text-secondary-foreground font-bold">
@@ -334,18 +357,26 @@ const Header = () => {
                     href="https://anydesk.com/pt/downloads/thank-you?dv=win_exe"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-4 p-4 bg-red-500/10 rounded-2xl text-red-400 font-bold border border-red-500/20"
+                    className="flex items-center gap-4 p-4 bg-red-500/10 rounded-2xl font-bold border border-red-500/20 text-secondary-foreground"
                   >
-                    <Download className="w-5 h-5" /> Baixar AnyDesk
+                    <img src={iconAnydesk} alt="AnyDesk" className="w-6 h-6 object-contain" /> Baixar AnyDesk
+                  </a>
+
+                  <a
+                    href="/Sistema_BC3.rdp"
+                    download="Sistema_BC3.rdp"
+                    className="flex items-center gap-4 p-4 bg-blue-500/10 rounded-2xl font-bold border border-blue-500/20 text-secondary-foreground"
+                  >
+                    <img src={iconRdp} alt="RDP" className="w-6 h-6 object-contain" /> Sistema BC3 (RDP)
                   </a>
 
                   <a
                     href="https://wa.me/5532999851183"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-4 p-4 bg-green-500/10 rounded-2xl text-green-400 font-bold border border-green-500/20"
+                    className="flex items-center gap-4 p-4 bg-green-500/10 rounded-2xl font-bold border border-green-500/20 text-secondary-foreground"
                   >
-                    <MessageCircle className="w-5 h-5" /> Suporte WhatsApp
+                    <img src={iconWhatsapp} alt="WhatsApp" className="w-6 h-6 object-contain" /> Suporte WhatsApp
                   </a>
 
                   <a

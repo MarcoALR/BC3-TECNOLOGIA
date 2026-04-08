@@ -116,7 +116,7 @@ const Header = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-bc3-industrial/95 backdrop-blur-md shadow-lg py-2"
+          ? "bg-bc3-industrial/95 dark:bg-bc3-industrial/95 backdrop-blur-md shadow-lg py-2"
           : "bg-transparent py-3 sm:py-5"
       }`}
     >
@@ -187,7 +187,7 @@ const Header = () => {
                     initial={{ opacity: 0, y: 15, scale: 0.95 }}
                     animate={{ opacity: 1, y: 0, scale: 1 }}
                     exit={{ opacity: 0, y: 15, scale: 0.95 }}
-                    className="absolute top-full right-0 mt-3 w-64 bg-bc3-industrial border border-secondary-foreground/20 rounded-2xl shadow-2xl overflow-hidden z-50 p-2"
+                    className="absolute top-full right-0 mt-3 w-64 bg-bc3-industrial dark:bg-bc3-industrial border border-border rounded-2xl shadow-2xl overflow-hidden z-50 p-2"
                   >
                     <div className="px-3 py-2 text-[10px] font-bold text-secondary-foreground/40 uppercase tracking-widest">
                       Atendimento Remoto
@@ -298,7 +298,7 @@ const Header = () => {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "tween", duration: 0.22 }}
-              className="fixed top-0 right-0 h-[100dvh] w-[86%] max-w-sm bg-bc3-industrial border-l border-secondary-foreground/10 shadow-2xl z-[9999] lg:hidden flex flex-col"
+              className="fixed top-0 right-0 h-[100dvh] w-[86%] max-w-sm bg-bc3-industrial dark:bg-bc3-industrial border-l border-border shadow-2xl z-[9999] lg:hidden flex flex-col"
               role="dialog"
               aria-modal="true"
             >

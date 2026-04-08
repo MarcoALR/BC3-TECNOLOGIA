@@ -24,12 +24,12 @@ const Hero = () => {
           loop
           muted
           playsInline
-          preload="none"
+          preload="metadata"
           className="absolute inset-0 w-full h-full object-cover"
         >
           <source src={heroVideo} type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-br from-bc3-industrial/95 via-bc3-industrial/90 to-bc3-gray-dark/95" />
+        <div className="absolute inset-0 bg-gradient-to-br from-bc3-industrial/95 via-bc3-industrial/90 to-bc3-industrial/95 dark:from-bc3-industrial/95 dark:via-bc3-industrial/90 dark:to-bc3-gray-dark/95" />
       </div>
 
       <div className="particles-bg" />

@@ -1,10 +1,8 @@
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 1
 
 User-agent: Bingbot
 Allow: /
-Crawl-delay: 1
 
 User-agent: Twitterbot
 Allow: /
@@ -14,5 +12,3 @@ Allow: /
 
 User-agent: *
 Allow: /
-
-Sitemap: https://bc3.com.br/sitemap.xml

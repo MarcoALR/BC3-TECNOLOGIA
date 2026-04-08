@@ -36,7 +36,7 @@ const Integrations = () => {
             Conecte o KRP com{" "}
             <span className="text-gradient-gold">Parceiros Tecnológicos</span>
           </h2>
-          <p className="text-sm sm:text-lg text-secondary-foreground/70">
+          <p className="text-sm sm:text-lg text-muted-foreground">
             Amplie as capacidades do seu ERP com integrações que potencializam
             análises, automação e eficiência operacional.
           </p>
@@ -44,14 +44,14 @@ const Integrations = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mb-10 sm:mb-16">
           {benefits.map((benefit) => (
-            <div key={benefit.title} className="text-center p-4 sm:p-6 rounded-2xl bg-secondary/30 border border-secondary-foreground/10">
+            <div key={benefit.title} className="text-center p-4 sm:p-6 rounded-2xl bg-card border border-border shadow-soft">
               <div className="w-12 sm:w-14 h-12 sm:h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-3 sm:mb-4">
                 <benefit.icon className="w-6 sm:w-7 h-6 sm:h-7 text-primary" />
               </div>
               <h3 className="font-display text-base sm:text-lg font-semibold text-secondary-foreground mb-2">
                 {benefit.title}
               </h3>
-              <p className="text-xs sm:text-sm text-secondary-foreground/60">{benefit.description}</p>
+              <p className="text-xs sm:text-sm text-muted-foreground">{benefit.description}</p>
             </div>
           ))}
         </div>
@@ -63,10 +63,10 @@ const Integrations = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
-              className={`relative rounded-2xl overflow-hidden border ${
+              className={`relative rounded-2xl overflow-hidden border shadow-soft ${
                 integration.highlight
                   ? "border-primary/30 bg-primary/5 shadow-gold"
-                  : "border-secondary-foreground/10 bg-secondary/30"
+                  : "border-border bg-card"
               }`}
             >
               {integration.highlight && (
@@ -101,7 +101,7 @@ const Integrations = () => {
                   </div>
                 </div>
 
-                <p className="text-secondary-foreground/70 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">
+                <p className="text-muted-foreground mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">
                   {integration.description}
                 </p>
 
@@ -124,7 +124,7 @@ const Integrations = () => {
           transition={{ duration: 0.6, delay: 0.5 }}
           className="text-center mt-10 sm:mt-16"
         >
-          <p className="text-secondary-foreground/60 mb-6 text-sm sm:text-base">
+          <p className="text-muted-foreground mb-6 text-sm sm:text-base">
             A combinação entre o ERP KRP e suas integrações proporciona visão clara,
             centralizada e inteligente das informações, eliminando retrabalho e
             melhorando o planejamento estratégico.

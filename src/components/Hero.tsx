@@ -29,7 +29,7 @@ const Hero = () => {
         >
           <source src={heroVideo} type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-br from-bc3-industrial/95 via-bc3-industrial/90 to-bc3-gray-dark/95" />
+        <div className="absolute inset-0 bg-gradient-to-br from-bc3-industrial/92 via-bc3-industrial/85 to-bc3-gray-dark/92" />
       </div>
 
       <div className="particles-bg" />

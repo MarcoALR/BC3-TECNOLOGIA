@@ -10,69 +10,69 @@
 ============================================ */
 
 @layer base {
-  /* === TEMA CLARO (amarelado suave) === */
+  /* === TEMA CLARO (off-white amarelado suave) === */
   :root {
-    --background: 43 30% 97%;
-    --foreground: 220 20% 12%;
+    --background: 40 20% 96%;
+    --foreground: 220 25% 14%;
 
-    --card: 43 25% 96%;
-    --card-foreground: 220 20% 10%;
+    --card: 40 16% 94%;
+    --card-foreground: 220 25% 12%;
 
-    --popover: 43 25% 96%;
-    --popover-foreground: 220 20% 10%;
+    --popover: 40 16% 94%;
+    --popover-foreground: 220 25% 12%;
 
-    --primary: 43 90% 55%;
-    --primary-foreground: 220 20% 10%;
+    --primary: 43 80% 50%;
+    --primary-foreground: 220 25% 10%;
 
-    --secondary: 220 10% 88%;
-    --secondary-foreground: 220 15% 15%;
+    --secondary: 220 12% 90%;
+    --secondary-foreground: 220 20% 18%;
 
-    --muted: 43 15% 92%;
-    --muted-foreground: 220 10% 40%;
+    --muted: 40 12% 91%;
+    --muted-foreground: 220 12% 38%;
 
-    --accent: 43 85% 50%;
-    --accent-foreground: 220 20% 10%;
+    --accent: 43 75% 46%;
+    --accent-foreground: 220 25% 10%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 43 15% 88%;
-    --input: 43 15% 88%;
-    --ring: 43 90% 55%;
+    --border: 220 12% 86%;
+    --input: 220 12% 86%;
+    --ring: 43 80% 50%;
 
     --radius: 0.75rem;
 
     /* === Cores Customizadas BC3 === */
-    --bc3-gold: 43 90% 55%;
-    --bc3-gold-light: 43 85% 65%;
-    --bc3-gold-dark: 40 95% 45%;
-    --bc3-gray-dark: 220 15% 15%;
-    --bc3-gray-medium: 220 12% 35%;
-    --bc3-gray-light: 220 15% 75%;
-    --bc3-industrial: 38 15% 82%;
-    --bc3-steel: 220 10% 25%;
+    --bc3-gold: 43 80% 50%;
+    --bc3-gold-light: 43 75% 60%;
+    --bc3-gold-dark: 40 85% 42%;
+    --bc3-gray-dark: 220 18% 16%;
+    --bc3-gray-medium: 220 14% 32%;
+    --bc3-gray-light: 220 12% 68%;
+    --bc3-industrial: 220 14% 22%;
+    --bc3-steel: 220 12% 20%;
 
     /* === Gradientes === */
-    --gradient-hero: linear-gradient(135deg, hsl(38 18% 84%) 0%, hsl(38 15% 80%) 100%);
-    --gradient-gold: linear-gradient(135deg, hsl(43 90% 55%) 0%, hsl(35 95% 50%) 100%);
-    --gradient-card: linear-gradient(180deg, hsl(38 15% 83%) 0%, hsl(38 12% 80%) 100%);
-    --gradient-dark: linear-gradient(180deg, hsl(38 18% 84%) 0%, hsl(38 15% 80%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(40 16% 94%) 0%, hsl(40 12% 90%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(43 80% 50%) 0%, hsl(38 85% 44%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(40 16% 94%) 0%, hsl(40 12% 91%) 100%);
+    --gradient-dark: linear-gradient(180deg, hsl(40 16% 94%) 0%, hsl(40 12% 90%) 100%);
 
     /* === Sombras === */
-    --shadow-soft: 0 4px 20px -4px hsl(220 20% 10% / 0.08);
-    --shadow-medium: 0 8px 30px -8px hsl(220 20% 10% / 0.12);
-    --shadow-strong: 0 16px 50px -12px hsl(220 20% 10% / 0.18);
-    --shadow-gold: 0 8px 30px -8px hsl(43 90% 55% / 0.25);
+    --shadow-soft: 0 4px 20px -4px hsl(220 20% 10% / 0.06);
+    --shadow-medium: 0 8px 30px -8px hsl(220 20% 10% / 0.10);
+    --shadow-strong: 0 16px 50px -12px hsl(220 20% 10% / 0.15);
+    --shadow-gold: 0 8px 30px -8px hsl(43 80% 50% / 0.22);
 
     /* Sidebar */
-    --sidebar-background: 38 15% 82%;
-    --sidebar-foreground: 220 15% 15%;
-    --sidebar-primary: 43 90% 55%;
-    --sidebar-primary-foreground: 220 20% 10%;
-    --sidebar-accent: 38 12% 78%;
-    --sidebar-accent-foreground: 220 15% 15%;
-    --sidebar-border: 38 12% 74%;
-    --sidebar-ring: 43 90% 55%;
+    --sidebar-background: 220 14% 22%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 43 80% 50%;
+    --sidebar-primary-foreground: 220 25% 10%;
+    --sidebar-accent: 220 14% 28%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 220 14% 30%;
+    --sidebar-ring: 43 80% 50%;
   }
 
   /* === TEMA ESCURO === */
@@ -86,8 +86,8 @@
     --popover: 220 15% 12%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 43 90% 55%;
-    --primary-foreground: 220 20% 10%;
+    --primary: 43 80% 50%;
+    --primary-foreground: 220 25% 10%;
 
     --secondary: 220 15% 20%;
     --secondary-foreground: 0 0% 95%;
@@ -95,19 +95,19 @@
     --muted: 220 15% 18%;
     --muted-foreground: 220 10% 60%;
 
-    --accent: 43 85% 50%;
-    --accent-foreground: 220 20% 10%;
+    --accent: 43 75% 46%;
+    --accent-foreground: 220 25% 10%;
 
     --destructive: 0 62% 30%;
     --destructive-foreground: 0 0% 95%;
 
     --border: 220 15% 20%;
     --input: 220 15% 20%;
-    --ring: 43 90% 55%;
+    --ring: 43 80% 50%;
 
-    --bc3-gold: 43 90% 55%;
-    --bc3-gold-light: 43 85% 65%;
-    --bc3-gold-dark: 40 95% 45%;
+    --bc3-gold: 43 80% 50%;
+    --bc3-gold-light: 43 75% 60%;
+    --bc3-gold-dark: 40 85% 42%;
     --bc3-gray-dark: 220 15% 15%;
     --bc3-gray-medium: 220 12% 35%;
     --bc3-gray-light: 220 15% 75%;

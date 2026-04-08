@@ -225,8 +225,8 @@ const Modules = () => {
                       loop
                       muted
                       playsInline
-                      preload="none"
-                      className="w-full h-full object-cover"
+                      preload="metadata"
+                      className="w-full h-full object-contain bg-black/5 dark:bg-black/20"
                     />
 
                     {/* BOTÃO FULLSCREEN */}

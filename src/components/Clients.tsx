@@ -53,7 +53,7 @@ const Clients = () => {
           <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-secondary-foreground mb-4 sm:mb-6">
             Empresas que <span className="text-gradient-gold">Confiam</span> na BC3
           </h2>
-          <p className="text-sm sm:text-lg text-muted-foreground">
+          <p className="text-sm sm:text-lg text-secondary-foreground/70">
             Indústrias de cartonagem e papelão ondulado que transformaram sua gestão
             com o ERP KRP.
           </p>
@@ -74,7 +74,7 @@ const Clients = () => {
               {duplicatedClients.map((client, index) => (
                 <div
                   key={`row1-${index}`}
-                  className="flex-shrink-0 mx-2 sm:mx-3 w-36 sm:w-40 h-16 sm:h-18 rounded-lg bg-card border border-border flex items-center justify-center p-3 shadow-soft"
+                  className="flex-shrink-0 mx-2 sm:mx-3 w-36 sm:w-40 h-16 sm:h-18 rounded-lg bg-secondary/30 border border-secondary-foreground/10 flex items-center justify-center p-3"
                 >
                   <img 
                     src={client.logo} 
@@ -104,7 +104,7 @@ const Clients = () => {
               {duplicatedClients.slice().reverse().map((client, index) => (
                 <div
                   key={`row2-${index}`}
-                  className="flex-shrink-0 mx-2 sm:mx-3 w-36 sm:w-40 h-16 sm:h-18 rounded-lg bg-card border border-border flex items-center justify-center p-3 shadow-soft"
+                  className="flex-shrink-0 mx-2 sm:mx-3 w-36 sm:w-40 h-16 sm:h-18 rounded-lg bg-secondary/30 border border-secondary-foreground/10 flex items-center justify-center p-3"
                 >
                   <img 
                     src={client.logo} 
@@ -136,19 +136,19 @@ const Clients = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 text-center">
             <div>
               <div className="font-display text-3xl sm:text-4xl font-bold text-gradient-gold mb-2">100+</div>
-              <div className="text-xs sm:text-sm text-muted-foreground">Empresas Atendidas</div>
+              <div className="text-xs sm:text-sm text-secondary-foreground/60">Empresas Atendidas</div>
             </div>
             <div>
               <div className="font-display text-3xl sm:text-4xl font-bold text-gradient-gold mb-2">16+</div>
-              <div className="text-xs sm:text-sm text-muted-foreground">Anos no Mercado</div>
+              <div className="text-xs sm:text-sm text-secondary-foreground/60">Anos no Mercado</div>
             </div>
             <div>
               <div className="font-display text-3xl sm:text-4xl font-bold text-gradient-gold mb-2">99%</div>
-              <div className="text-xs sm:text-sm text-muted-foreground">Taxa de Retenção</div>
+              <div className="text-xs sm:text-sm text-secondary-foreground/60">Taxa de Retenção</div>
             </div>
             <div>
               <div className="font-display text-3xl sm:text-4xl font-bold text-gradient-gold mb-2">24/7</div>
-              <div className="text-xs sm:text-sm text-muted-foreground">Suporte Disponível</div>
+              <div className="text-xs sm:text-sm text-secondary-foreground/60">Suporte Disponível</div>
             </div>
           </div>
         </motion.div>

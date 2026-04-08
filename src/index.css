@@ -165,7 +165,8 @@
 
   .btn-hero-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 12px 40px -8px hsl(43 90% 55% / 0.4);
+    box-shadow: 0 12px 40px -8px hsl(43 80% 50% / 0.4);
+    filter: brightness(1.08);
   }
 
   .btn-hero-secondary {
